@@ -1,0 +1,70 @@
+header{
+  border: 1px dashed red;
+  background: #131921;
+}
+.a_header_top{
+  height: 60px;
+  border: 1px dashed green;
+}
+.a_header_top > button:hover{
+  border:1px solid #fff;
+}
+.a_header_bottom{
+  height: 39px;
+  border:1px dashed purple;
+}
+.a_main{
+  height: 4818px;
+  border:1px dashed blue;
+  background: #eaeded; 
+}
+.a_main1{
+  height: 600px;
+  border:1px dashed orange;
+}
+.a_main_bottom{
+  height: 4564px;
+  background: red;
+  border:2px dashed #000;
+  top:253px;
+  left:20px;
+  width: 97%;
+}
+.a_main_bottom_1{
+  border:1px dashed blue;
+}
+.a_main_bottom_1 > div{
+  height: 423px;
+  border:1px dashed green;
+}
+.a_main_bottom_2{
+ 
+  border:1px dashed purple;
+}
+.a_main_bottom_2 > div{
+  height: 428px;
+  border:1px dashed violet;
+}
+.a_main_bottom_3{
+  height: 367px;
+  background: green;
+}
+.imgCont{
+  height: 300px;
+  border:1px dashed red;
+}
+.imgCont > div{
+  border:1px dashed blue;
+}
+#carouselExampleControls2 .a_cc{
+  background:#fff;
+  width: 3%;
+  height: 30%;
+  top:145px;
+}
+
+footer{
+  height: 227px;
+  border:1px dashed green;
+  background: #131921;
+}
