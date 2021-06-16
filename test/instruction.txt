@@ -1,0 +1,50 @@
+AMAZON
+
+MERN
+
+R = React.Js (UI Library) + BS5
+
+Tools
+1. MS Visual Code (IDE)
+2. GIT Version Control 
+	https://git-scm.com/
+3. Node.Js
+
+
+React is used to create SPA
+Single Page Application
+
+NPM = Node Package Manager
+
+To Install React Package
+
+npm install -g create-react-app
+
+https://getbootstrap.com/
+BS 5,4,3
+
+Home Dimention
+
+Header  1366 x 99
+Main 	1366 x 4818
+Footer  1366 x 227
+
+SPA = React vs Angular vs VieJs vs NextJs
+
+React
+DOM = Document Object Model
+
+3 Points to remember about React
+1. React is a JS Framework to create UI
+2. React is used to create SPA (Single Page Application) Application 
+3. React uses Virtual DOM (Document object Model)
+
+React Support HOT 
+
+How to Download Photoshop?
+1.https://getintopc.com/
+2.
+	Open Google.com
+	type
+	index of photoshop cs6
+	and then click any site link you like	
