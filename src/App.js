@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser,faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight,faBars } from '@fortawesome/free-solid-svg-icons'
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -44,7 +44,7 @@ class App extends Component {
                 <h5 className="fw-bolder ps-4">Trending</h5>
                 <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Echo &amp; Alexa </a>
+                    <a className="nav-link" href="#">Echo &amp; Alexa </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">New Release</a>
@@ -59,7 +59,7 @@ class App extends Component {
                 <h5 className="fw-bolder ps-4">Digital Content And Devices</h5>
                 <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Echo &amp; Alexa <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                    <a className="nav-link" href="#">Echo &amp; Alexa <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">Fire TV <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
@@ -80,7 +80,7 @@ class App extends Component {
                 <h5 className="fw-bolder ps-4">Shop By Department</h5>
                 <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Mobile &amp; Computer <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                    <a className="nav-link" href="#">Mobile &amp; Computer <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">TV,Appliances,Electronics <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
@@ -95,33 +95,33 @@ class App extends Component {
                 <h5 className="fw-bolder ps-4">Programs &amp; Features</h5>
                 <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Gift Cards &amp; Mobile Rechanges <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                    <a className="nav-link" href="#">Gift Cards &amp; Mobile Rechanges <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Fligh Ticket</a>
+                    <a className="nav-link" href="#">Fligh Ticket</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Amazon Assistance</a>
+                    <a className="nav-link" href="#">Amazon Assistance</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Full Store Directory</a>
+                    <a className="nav-link" href="#">Full Store Directory</a>
                   </li>
                 </ul>
                 <h5 className="fw-bolder ps-4">Help &amp; Settings</h5>
                 <ul className="nav flex-column pt-1 mb-2 mhul">
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Your Account</a>
+                    <a className="nav-link" href="#">Your Account</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Customer Service</a>
+                    <a className="nav-link" href="#">Customer Service</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link"href="#">Signin</a>
+                    <a className="nav-link" href="#">Signin</a>
                   </li>
                 </ul>
               </div>
               <div className="">
-               
+
               </div>
             </div>
           </div>
@@ -143,32 +143,83 @@ class App extends Component {
             <button className="btn h-100" style={{ 'width': '8%' }}>G</button>
           </div>
           <div className="a_header_bottom">
-            <button onClick={this.handleModal} type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Click</button>
+            <ul className="nav mt-1 ms-3 float-start">
+              <li className="nav-item">
+                <a onClick={this.handleModal} data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Best Seller</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Mobile</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Electronics</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Fashion</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">New Release</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Customer Service</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Amazon Pay</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Computers</a>
+              </li>
+            </ul>
+            <a href="#" className="float-end">
+              <img src="./images/header_banner.jpg" />
+            </a>
+            <ul className="nav mt-1 float-start">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Home &amp; Kitchen</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Today's Deal</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Toy's &amp; Games</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Books</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Sell</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Coupons</a>
+              </li>
+            </ul>
           </div>
         </header>
         <div className="a_main position-relative">
           <div className="a_main1 a_main_top">
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="500">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="500">
+                <div className="carousel-item active">
                   <img src="./images/slider/1.jpg" className="d-block" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="500">
+                <div className="carousel-item">
                   <img src="./images/slider/2.jpg" className="d-block" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="500">
+                <div className="carousel-item">
                   <img src="./images/slider/3.jpg" className="d-block" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="500">
+                <div className="carousel-item">
                   <img src="./images/slider/4.jpg" className="d-block" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="500">
+                <div className="carousel-item">
                   <img src="./images/slider/5.jpg" className="d-block" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="500">
+                <div className="carousel-item">
                   <img src="./images/slider/6.jpg" className="d-block" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="500">
+                <div className="carousel-item">
                   <img src="./images/slider/7.jpg" className="d-block" alt="..." />
                 </div>
               </div>

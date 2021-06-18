@@ -37,6 +37,19 @@ header{
   height: 39px;
   border:1px dashed purple;
 }
+.a_header_bottom a:hover{
+  color:#fff;
+  outline: 1px solid #fff;
+}
+.a_header_bottom a:focus{
+  color:#fff;
+}
+.a_header_bottom a{
+  /*TRBL*/
+  padding: 2px 10px 2px 10px !important;
+  color:#fff;
+
+}
 .a_main{
   height: 4818px;
   border:1px dashed blue;
