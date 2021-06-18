@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight,faBars } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight, faBars,faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -14,7 +14,8 @@ class App extends Component {
   //1. property
   state = {
     x: 'l934',
-    y: ''
+    y: '',
+    z:''
   }
   //2. constructor
   constructor(props) {
@@ -24,16 +25,16 @@ class App extends Component {
   //3.Method
   componentDidMount() {
     //this is the life cyle method that will be called when page is loaded successfully
-    window.addEventListener('scroll',this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
-  handleScroll = ()=>{
-    console.log('ok '+window.scrollY);
-    if(window.scrollY >= 60){//if scroll amount is greater than 50 then we will 
-        // Add 'position-fixed top-0 start-0'
-      this.setState({y:'position-fixed top-0 start-0'});
-    }else{
+  handleScroll = () => {
+    console.log('ok ' + window.scrollY);
+    if (window.scrollY >= 60) {//if scroll amount is greater than 50 then we will 
+      // Add 'position-fixed top-0 start-0'
+      this.setState({ y: 'position-fixed top-0 start-0' });
+    } else {
       // Remove 'position-fixed top-0 start-0'
-      this.setState({y:''});
+      this.setState({ y: '' });
     }
   }
   closemodal = () => {
@@ -41,6 +42,14 @@ class App extends Component {
   }
   handleModal = () => {
     this.setState({ x: 'l433' })
+  }
+  formHandle = ()=>{
+    if(this.state.z == 'formboder'){
+      this.setState({z:''})
+    }else{
+      this.setState({z:'formboder'})
+    }
+    
   }
   render() {
     return (
@@ -139,7 +148,7 @@ class App extends Component {
           </div>
         </div>
         <header>
-          <div className={'a_header_top p-1 w-100 '+this.state.y }>
+          <div className={'a_header_top p-1 w-100 ' + this.state.y}>
             <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
               <img className="img-fluid" src="./logo.png" />
             </button>
@@ -148,7 +157,27 @@ class App extends Component {
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <span className="fw-bold d-block"><span className="a_city">Neemuch</span><span className="a_pincode">458441</span></span>
             </button>
-            <form className="bg-white hform w-50 h-75 d-inline-block">C</form>
+            <form className={ 'bg-white hform w-50 d-inline-block '+this.state.z }>
+              <div className="row m-0">
+                <div className="col-1 p-0 border-end">
+                  <div className="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                     All
+                    </button>
+                    <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><a className="dropdown-item" href="#">Dropdown link</a></li>
+                      <li><a className="dropdown-item" href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-10 p-0">
+                  <input onBlur={this.formHandle} onFocus={this.formHandle} className="h-100 form-control rounded-0" />
+                </div>
+                <div className="col-1 p-0">
+                    <button className="w-100 btn btn-warning rounded-0" type="submit" ><FontAwesomeIcon icon={faSearch} /> </button>
+                </div>
+              </div>
+            </form>
             <button className="btn h-100" style={{ 'width': '4%' }}>D</button>
             <button className="btn h-100" style={{ 'width': '8%' }}>E</button>
             <button className="btn h-100" style={{ 'width': '8%' }}>F</button>
