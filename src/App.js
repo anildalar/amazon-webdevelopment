@@ -13,7 +13,8 @@ import PropTypes from 'prop-types'
 class App extends Component {
   //1. property
   state = {
-    x: 'l934'
+    x: 'l934',
+    y: ''
   }
   //2. constructor
   constructor(props) {
@@ -22,7 +23,18 @@ class App extends Component {
 
   //3.Method
   componentDidMount() {
-
+    //this is the life cyle method that will be called when page is loaded successfully
+    window.addEventListener('scroll',this.handleScroll);
+  }
+  handleScroll = ()=>{
+    console.log('ok '+window.scrollY);
+    if(window.scrollY >= 60){//if scroll amount is greater than 50 then we will 
+        // Add 'position-fixed top-0 start-0'
+      this.setState({y:'position-fixed top-0 start-0'});
+    }else{
+      // Remove 'position-fixed top-0 start-0'
+      this.setState({y:''});
+    }
   }
   closemodal = () => {
     this.setState({ x: 'l934' });
@@ -127,7 +139,7 @@ class App extends Component {
           </div>
         </div>
         <header>
-          <div className="a_header_top p-1">
+          <div className={'a_header_top p-1 w-100 '+this.state.y }>
             <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
               <img className="img-fluid" src="./logo.png" />
             </button>
@@ -175,7 +187,7 @@ class App extends Component {
             <a href="#" className="float-end">
               <img src="./images/header_banner.jpg" />
             </a>
-            <ul className="nav mt-1 float-start">
+            <ul className="nav mt-1 float-start d-none">
               <li className="nav-item">
                 <a className="nav-link" href="#">Home &amp; Kitchen</a>
               </li>

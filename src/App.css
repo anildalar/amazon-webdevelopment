@@ -29,6 +29,8 @@ header{
 .a_header_top{
   height: 60px;
   border: 1px dashed green;
+  z-index: 1000;
+  background: #131921;
 }
 .a_header_top > button:hover{
   border:1px solid #fff;
