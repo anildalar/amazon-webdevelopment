@@ -2,6 +2,19 @@ header{
   border: 1px dashed red;
   background: #131921;
 }
+.headermodal{
+  /* transition: property duration timing-function delay|initial|inherit; */
+  max-width: 365px !important;
+  top:-30px !important;
+  transition: all 0.3s ease-out !important;
+  border-radius: 0px !important;
+}
+.l934{
+  left:-934px !important;
+}
+.l433{
+  left:-500px !important;
+}
 .a_header_top{
   height: 60px;
   border: 1px dashed green;
