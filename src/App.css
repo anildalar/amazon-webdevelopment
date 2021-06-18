@@ -2,6 +2,17 @@ header{
   border: 1px dashed red;
   background: #131921;
 }
+.mhul li a:hover{
+  background: #eaeded;
+  color:#333;
+}
+.mhul li a{
+  padding-left: 30px;
+  color:#333;
+}
+.mhcolor{
+  background: #232f3e;
+}
 .headermodal{
   /* transition: property duration timing-function delay|initial|inherit; */
   max-width: 365px !important;

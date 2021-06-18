@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser,faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -13,38 +13,115 @@ import PropTypes from 'prop-types'
 class App extends Component {
   //1. property
   state = {
-    x:'headermodal l934'
+    x: 'l934'
   }
   //2. constructor
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
   //3.Method
-  componentDidMount(){
+  componentDidMount() {
 
   }
-  handleModal = ()=>{
-    this.setState({x:'headermodal l433'})
+  closemodal = () => {
+    this.setState({ x: 'l934' });
+  }
+  handleModal = () => {
+    this.setState({ x: 'l433' })
   }
   render() {
     return (
       <div>
-        <div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className={'modal-dialog modal-dialog-scrollable '+this.state.x} >
+        <div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className={'h-100 modal-dialog modal-dialog-scrollable headermodal ' + this.state.x} >
             <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div className="modal-header text-white mhcolor">
+                <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
+                <button onClick={this.closemodal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div className="modal-body">
-                <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <p>This content should appear at the bottom after you scroll.</p>
+              <div className="modal-body ps-0 pe-0 pt-2 pb-2">
+                <h5 className="fw-bolder ps-4">Trending</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Echo &amp; Alexa </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">New Release</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Movies and Shakers</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <h5 className="fw-bolder ps-4">Digital Content And Devices</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Echo &amp; Alexa <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Fire TV <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Kindle Ebooks</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Audible Audiobooks</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Audible Prime Video</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Audible Prime Music</a>
+                  </li>
+                </ul>
+                <h5 className="fw-bolder ps-4">Shop By Department</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Mobile &amp; Computer <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">TV,Appliances,Electronics <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fashion</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Women's Fashion</a>
+                  </li>
+                </ul>
+                <h5 className="fw-bolder ps-4">Programs &amp; Features</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Gift Cards &amp; Mobile Rechanges <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Fligh Ticket</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Amazon Assistance</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Full Store Directory</a>
+                  </li>
+                </ul>
+                <h5 className="fw-bolder ps-4">Help &amp; Settings</h5>
+                <ul className="nav flex-column pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Your Account</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Customer Service</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link"href="#">Signin</a>
+                  </li>
+                </ul>
               </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Understood</button>
+              <div className="">
+               
               </div>
             </div>
           </div>
@@ -122,11 +199,11 @@ class App extends Component {
             </div>
             <div className="a_main_bottom_3 p-3">
               <div className="">
-                <h3 class="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link">see all deals</button>
+                <h3 className="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link">see all deals</button>
               </div>
-              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner text-center">
-                  <div class="carousel-item active">
+              <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner text-center">
+                  <div className="carousel-item active">
                     <div className="imgCont row">
                       <div className="col">1</div>
                       <div className="col">2</div>
@@ -136,7 +213,7 @@ class App extends Component {
                       <div className="col">6</div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <div className="imgCont row">
                       <div className="col">7</div>
                       <div className="col">8</div>
@@ -146,7 +223,7 @@ class App extends Component {
                       <div className="col">12</div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <div className="imgCont row">
                       <div className="col">13</div>
                       <div className="col">14</div>
@@ -157,13 +234,13 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
-                <button class="a_cc carousel-control-prev rounded-end" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button className="a_cc carousel-control-prev rounded-end" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
-                <button class="a_cc carousel-control-next rounded-start" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button className="a_cc carousel-control-next rounded-start" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
