@@ -52,3 +52,11 @@ How to Download Photoshop?
 
 left:-934px;
 left:-433px
+
+
+240x300
+width:20%;
+top:950px;
+left:288px
+
+

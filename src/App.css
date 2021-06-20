@@ -1,5 +1,21 @@
 .tbdr{
   border:1px dashed #000;
+  
+}
+.a_ht_signin_model a{
+  font-size: 12px !important;
+  padding: 2px !important;
+  color:#333;
+}
+.a_ht_signin_model a:hover{
+  text-decoration: underline; 
+  color:#f0c350; 
+}
+.a_signin_model{
+  display: block !important;
+}
+button:focus{
+  box-shadow: none !important;
 }
 header{
 }
@@ -51,8 +67,13 @@ header{
   z-index: 1000;
   background: #131921;
 }
+.a_header_top button{
+  font-size: 12px !important; 
+  padding: 5px 8px !important;
+}
 .a_header_top > button:hover{
   border:1px solid #fff;
+  border-radius: 2px !important;
 }
 .a_header_bottom{
   height: 39px;

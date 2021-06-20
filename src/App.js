@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch,faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -51,12 +51,12 @@ class App extends Component {
     }
 
   }
-  handleCountryDD = ()=>{
+  handleCountryDD = () => {
     //alert('ok');
     //Show the exampleModel2 
-   // var modalToggle = document.getElementById('exampleModal2'); // relatedTarget
+    // var modalToggle = document.getElementById('exampleModal2'); // relatedTarget
     //myModal.show(modalToggle)
-   // modalToggle.modal('show');
+    // modalToggle.modal('show');
   }
   render() {
     return (
@@ -158,249 +158,336 @@ class App extends Component {
           <div className="modal-dialog modal-sm">
             <div className="modal-content">
               <div className="modal-header">
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label className="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                  </div>
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                  <label className="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                  </label>
+                </div>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">
                 <form>
                   <div className="form-check">
                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label className="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
                   </div>
                   <div className="form-check">
-                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                        <label className="form-check-label" for="flexRadioDefault2">
-                          Default checked radio
-                        </label>
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                    <label className="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
                   </div>
                   <div className="form-check">
                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label className="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
                   </div>
                   <div className="form-check">
-                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                        <label className="form-check-label" for="flexRadioDefault2">
-                          Default checked radio
-                        </label>
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                    <label className="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
                   </div>
                 </form>
-                  </div>
-                  <div className="modal-footer">
-                    <p><Flag code={ 'in' } height="16"  /> You are shopping on Amazon.in.</p>
-                    <a href="#" className="btn btn-link">Change country/region</a>
-                  </div>
-            </div>
+              </div>
+              <div className="modal-footer">
+                <p><Flag code={'in'} height="16" /> You are shopping on Amazon.in.</p>
+                <a href="#" className="btn btn-link">Change country/region</a>
               </div>
             </div>
-            <header>
-              <div className={'a_header_top p-1 w-100 ' + this.state.y}>
-                <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
-                  <img className="img-fluid" src="./logo.png" />
-                </button>
-                <button className="lh-1 text-white fs-6 me-1 btn h-100" style={{ 'width': '10%' }}>
-                  Deliver to Anil
-                  <FontAwesomeIcon icon={faMapMarkerAlt} />
-                  <span className="fw-bold d-block"><span className="a_city">Neemuch</span><span className="a_pincode">458441</span></span>
-                </button>
-                <form className={'bg-white hform w-50 d-inline-block ' + this.state.z}>
-                  <div className="row m-0">
-                    <div className="col-1 p-0 border-end">
-                      <div className="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          All
-                        </button>
-                        <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                          <li><a className="dropdown-item" href="#">Dropdown link</a></li>
-                          <li><a className="dropdown-item" href="#">Dropdown link</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-10 p-0">
-                      <input onBlur={this.formHandle} onFocus={this.formHandle} className="h-100 form-control rounded-0" />
-                    </div>
-                    <div className="col-1 p-0">
-                      <button className="w-100 btn btn-warning rounded-0" type="submit" ><FontAwesomeIcon icon={faSearch} /> </button>
-                    </div>
-                  </div>
-                </form>
-                <button onMouseOver={this.handleCountryDD} className="btn h-100 p-0" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                  <Flag className="d-inline-block me-1" code={ 'in' } height="16"  /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
-                </button>
-                <button className="btn h-100" style={{ 'width': '8%' }}>E</button>
-                <button className="btn h-100" style={{ 'width': '8%' }}>F</button>
-                <button className="btn h-100" style={{ 'width': '8%' }}>G</button>
-              </div>
-              <div className="a_header_bottom">
-                <ul className="nav mt-1 ms-3 float-start">
-                  <li className="nav-item">
-                    <a onClick={this.handleModal} data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Best Seller</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Mobile</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Electronics</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Fashion</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">New Release</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Customer Service</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Amazon Pay</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Computers</a>
-                  </li>
-                </ul>
-                <a href="#" className="float-end">
-                  <img src="./images/header_banner.jpg" />
-                </a>
-                <ul className="nav mt-1 float-start d-none">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Home &amp; Kitchen</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Today's Deal</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Toy's &amp; Games</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Books</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Sell</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Coupons</a>
-                  </li>
-                </ul>
-              </div>
-            </header>
-            <div className="a_main position-relative">
-              <div className="a_main1 a_main_top">
-                <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <img src="./images/slider/1.jpg" className="d-block" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="./images/slider/2.jpg" className="d-block" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="./images/slider/3.jpg" className="d-block" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="./images/slider/4.jpg" className="d-block" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="./images/slider/5.jpg" className="d-block" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="./images/slider/6.jpg" className="d-block" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="./images/slider/7.jpg" className="d-block" alt="..." />
-                    </div>
-                  </div>
-                  <button className="carousel-control-prev h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button className="carousel-control-next h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <div className="ml-1 position-absolute a_main_bottom">
-                <div className="a_main_bottom_1 row m-0 mb-3">
-                  <div className="col">
-
-                  </div>
-                  <div className="col">B</div>
-                  <div className="col">C</div>
-                  <div className="col">D</div>
-
-                </div>
-                <div className="a_main_bottom_2 row m-0 mb-3">
-                  <div className="col-6">A</div>
-                  <div className="col-3">B</div>
-                  <div className="col-3">C</div>
-                </div>
-                <div className="a_main_bottom_3 p-3">
-                  <div className="">
-                    <h3 className="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link">see all deals</button>
-                  </div>
-                  <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-inner text-center">
-                      <div className="carousel-item active">
-                        <div className="imgCont row">
-                          <div className="col">1</div>
-                          <div className="col">2</div>
-                          <div className="col">3</div>
-                          <div className="col">4</div>
-                          <div className="col">5</div>
-                          <div className="col">6</div>
-                        </div>
-                      </div>
-                      <div className="carousel-item">
-                        <div className="imgCont row">
-                          <div className="col">7</div>
-                          <div className="col">8</div>
-                          <div className="col">9</div>
-                          <div className="col">10</div>
-                          <div className="col">11</div>
-                          <div className="col">12</div>
-                        </div>
-                      </div>
-                      <div className="carousel-item">
-                        <div className="imgCont row">
-                          <div className="col">13</div>
-                          <div className="col">14</div>
-                          <div className="col">15</div>
-                          <div className="col">16</div>
-                          <div className="col">17</div>
-                          <div className="col">18</div>
-                        </div>
-                      </div>
-                    </div>
-                    <button className="a_cc carousel-control-prev rounded-end" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="a_cc carousel-control-next rounded-start" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span className="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <footer></footer>
           </div>
-          )
+        </div>
+        <div className="modal a_ht_signin_model" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header text-center a_signin_model">
+                <button className="btn btn-warning w-50">Sign in</button>
+                <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+              </div>
+              <div className="modal-body">
+                <div className="row">
+                  <div className="col">
+                    <h5>Your List</h5>
+                    <ul className="nav flex-column">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Create a Wish list</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Find a Wish list</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Wish from anywebsite</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Baby Wishlist</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Discover your style</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Explore Showroom</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col">
+                    <h5>Your Account</h5>
+                    <ul className="nav flex-column">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">YourAccount</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Orders</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Wish List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Recommendations</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Prime Membership</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Prime Video</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Subscribe &amp; Save Items</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Membership &amp; Subscription </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Amazon Business Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Seller Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Manage Your Content and Devices</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <header>
+          <div className={'a_header_top p-1 w-100 ' + this.state.y}>
+            <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
+              <img className="img-fluid" src="./logo.png" />
+            </button>
+            <button className="text-start row m-0 lh-1 text-white fs-6 me-1 btn h-100" style={{ 'width': '10%' }}>
+              <div className="col-2 p-0"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
+              <div className="col-10 p-0 fw-bolder">
+                Deliver to Anil
+
+                <span className="fw-bold d-block"><span className="a_city">Neemuch</span><span className="a_pincode">458441</span></span>
+              </div>
+
+            </button>
+            <form className={'bg-white hform w-50 d-inline-block ' + this.state.z}>
+              <div className="row m-0">
+                <div className="col-1 p-0 border-end">
+                  <div className="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      All
+                    </button>
+                    <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><a className="dropdown-item" href="#">Dropdown link</a></li>
+                      <li><a className="dropdown-item" href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-10 p-0">
+                  <input onBlur={this.formHandle} onFocus={this.formHandle} className="h-100 form-control rounded-0" />
+                </div>
+                <div className="col-1 p-0">
+                  <button className="w-100 h-100 btn btn-warning rounded-0" type="submit" ><FontAwesomeIcon className="text-dark fs-4" icon={faSearch} /> </button>
+                </div>
+              </div>
+            </form>
+            <button onMouseOver={this.handleCountryDD} className="btn h-100 p-0" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              <Flag className="d-inline-block me-1" code={'in'} height="16" /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
+            </button>
+            <button className="text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }} data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              <div>Hello, Sign in</div>
+              <span className="fw-bolder">Account &amp; Lists</span>
+            </button>
+            <button className="text-start text-white btn h-100" style={{ 'width': '8%' }}>
+              <div>Returns</div>
+              <span className="fw-bolder">&amp; Orders</span>
+            </button>
+            <button className="text-white btn h-100" style={{ 'width': '8%' }}>
+              <FontAwesomeIcon className="fs-3" icon={faCartPlus} /> Cart
+            </button>
+          </div>
+          <div className="a_header_bottom">
+            <ul className="nav mt-1 ms-3 float-start">
+              <li className="nav-item">
+                <a onClick={this.handleModal} data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Best Seller</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Mobile</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Electronics</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Fashion</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">New Release</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Customer Service</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Amazon Pay</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Computers</a>
+              </li>
+            </ul>
+            <a href="#" className="float-end">
+              <img src="./images/header_banner.jpg" />
+            </a>
+            <ul className="nav mt-1 float-start d-none">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Home &amp; Kitchen</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Today's Deal</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Toy's &amp; Games</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Books</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Sell</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Coupons</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div className="a_main position-relative">
+          <div className="a_main1 a_main_top">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src="./images/slider/1.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/2.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/3.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/4.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/5.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/6.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/7.jpg" className="d-block" alt="..." />
+                </div>
+              </div>
+              <button className="carousel-control-prev h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button className="carousel-control-next h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div className="ml-1 position-absolute a_main_bottom">
+            <div className="a_main_bottom_1 row m-0 mb-3">
+              <div className="col">
+
+              </div>
+              <div className="col">B</div>
+              <div className="col">C</div>
+              <div className="col">D</div>
+
+            </div>
+            <div className="a_main_bottom_2 row m-0 mb-3">
+              <div className="col-6">A</div>
+              <div className="col-3">B</div>
+              <div className="col-3">C</div>
+            </div>
+            <div className="a_main_bottom_3 p-3">
+              <div className="">
+                <h3 className="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link">see all deals</button>
+              </div>
+              <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner text-center">
+                  <div className="carousel-item active">
+                    <div className="imgCont row">
+                      <div className="col">1</div>
+                      <div className="col">2</div>
+                      <div className="col">3</div>
+                      <div className="col">4</div>
+                      <div className="col">5</div>
+                      <div className="col">6</div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="imgCont row">
+                      <div className="col">7</div>
+                      <div className="col">8</div>
+                      <div className="col">9</div>
+                      <div className="col">10</div>
+                      <div className="col">11</div>
+                      <div className="col">12</div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="imgCont row">
+                      <div className="col">13</div>
+                      <div className="col">14</div>
+                      <div className="col">15</div>
+                      <div className="col">16</div>
+                      <div className="col">17</div>
+                      <div className="col">18</div>
+                    </div>
+                  </div>
+                </div>
+                <button className="a_cc carousel-control-prev rounded-end" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="a_cc carousel-control-next rounded-start" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <footer></footer>
+      </div>
+    )
   }
 }
 
 
-          App.propTypes = { }
-          export default App
+App.propTypes = {}
+export default App
