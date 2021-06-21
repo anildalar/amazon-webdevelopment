@@ -419,11 +419,58 @@ class App extends Component {
           </div>
           <div className="ml-1 position-absolute a_main_bottom">
             <div className="a_main_bottom_1 row m-0 mb-3">
-              <div className="col">
-
+              <div className="col p-2">
+                <div className="a_mainbox1 p-3">
+                  <div className="a_mainbox1_inner w-100 h-100 bg-danger">
+                    <div className=" w-100 bg-warning">
+                      <h5>Top picks for your home</h5>
+                      <div className="row m-0">
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="text-start p-0 rounded-0 btn btn-success w-100 h-100">
+                            <img className="img-fluid" src="./images/main_imgs/1.jpg" />
+                            ACs
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="text-start p-0 rounded-0 btn btn-success w-100 h-100">
+                            <img className="img-fluid" src="./images/main_imgs/2.jpg" />
+                            Refigerators
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="text-start p-0 rounded-0 btn btn-success w-100 h-100">
+                            <img className="img-fluid" src="./images/main_imgs/3.jpg" />
+                            Microwaves
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="text-start p-0 rounded-0 btn btn-success w-100 h-100">
+                            <img className="img-fluid" src="./images/main_imgs/4.jpg" />
+                            Washing Machines
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
               </div>
-              <div className="col">B</div>
-              <div className="col">C</div>
+              <div className="col p-2">
+                <div className="a_mainbox1 p-3">
+                  <div className="a_mainbox1_inner w-100 h-100 bg-danger">
+                    <div className=" w-100 bg-warning">ASD</div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col p-2">
+                <div className="a_mainbox1 p-3">
+                  <div className="a_mainbox1_inner w-100 h-100 bg-danger">
+                    <div className=" w-100 bg-warning">ASD</div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
+              </div>
               <div className="col">D</div>
 
             </div>
