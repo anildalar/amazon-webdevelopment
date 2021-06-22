@@ -553,16 +553,149 @@ class App extends Component {
 
         </div>
         <footer>
-          <div className="a_footer_top">
-            <div className="container">
-              <div className="row">
-                <div className="col-3">A</div>
-                <div className="col-3">A</div>
-                <div className="col-3">A</div>
-                <div className="col-3">A</div>
+          <a href="#" className="btn btn-success w-100 rounded-0 border-0 lh-lg" style={{ backgroundColor: '#37475a', height: '50px' }}>Back to top</a>
+          <div className="a_footer_top pb-5">
+            <div className="container pt-5">
+              <div className="row text-white">
+                <div className="col-3">
+                  <h6>Get to Know Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">About Us</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Carrers</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Press Releases</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link" href="#">Amazon Cares</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link" href="#">Gift a Smile</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3">
+                  <h6>Connect with Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Facebook</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Twitter</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Instagram</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3">
+                  <h6>Make Money with Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Sell on Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Sell under Amazon Accelerator</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon Global Selling</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link " href="#">Become an Affiliate</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link " href="#">Fulfilment by Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link " href="#">Advertise Your Products</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link " href="#">Amazon Pay on Merchants</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3">
+                  <h6>Let Us Help You</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">COVID-19 and Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Your Account</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Return Centre</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link" href="#">100% Purchase Protection</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link" href="#">Amazon App Download</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link" href="#">Amazon Assistance Download Protection</a>
+                    </li>
+                    <li className="nav-item">
+                      <a class="nav-link" href="#">Help</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <hr className="text-secondary" />
+            <div className="d-flex justify-content-center">
+                <a href="#" className="btn me-5">
+                  <img className="img-fluid" src="./logo.png" />
+                </a>
+                <a href="#" className="btn btn-danger">B</a>
+              </div>
+            <div class="d-flex justify-content-center">
+              
+              <ul className="nav">
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Australia</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Brazil</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Australia</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Brazil</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Australia</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Brazil</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Australia</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Brazil</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Australia</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Brazil</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Australia</a>
+                </li>
+                <li className="nav-item ms-2 me-2">
+                  <a className="nav-link" href="#">Brazil</a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+
           <div className="a_footer_bottom">A</div>
         </footer>
       </div>

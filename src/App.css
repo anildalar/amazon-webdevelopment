@@ -164,6 +164,17 @@ header{
   height: 452px;
   background: #232f3e;
 }
+.a_footer_top a{
+  padding: 4px 0px;
+  color:#fff;
+}
+.a_footer_top .container{
+  max-width: 990px;
+}
+.a_footer_top a:hover{
+  text-decoration: underline;
+  color:#fff;
+}
 .a_footer_bottom{
   height: 227px;
   background: #131921;
