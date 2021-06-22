@@ -160,8 +160,14 @@ header{
   top:145px;
 }
 
-footer{
+.a_footer_top{
+  height: 452px;
+  background: #232f3e;
+}
+.a_footer_bottom{
   height: 227px;
-  border:1px dashed green;
   background: #131921;
+}
+footer{
+  border:1px dashed green;
 }

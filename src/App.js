@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -471,7 +471,30 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col">D</div>
+              <div className="col">
+                <div className="row">
+                  <div className="col-12 p-3 bg-white tbdr mb-4" style={{ 'height': 150 + 'px' }}>
+                    <h4 className="mb-3">Sign in for your best experience</h4>
+                    <button className="btn btn-warning w-100 border border-secondary rounded-1">Sign in securely</button>
+                  </div>
+                  <div className="col-12 p-3 bg-white border border-secondary" style={{ 'height': 248 + 'px' }}>
+                    <div className="bg-success mb-2" style={{ 'height': 170 + 'px' }}>
+                      <img src="https://m.media-amazon.com/images/G/01/d16g/kpw/transparent-1x1.png" />
+                      <h6>TECNO Spark 7T(Magnet Black, 4GB RAM</h6>
+                    </div>
+                    <div className="float-start">
+                      <FontAwesomeIcon className="text-warning" icon={faStar} />
+                      <FontAwesomeIcon className="text-warning" icon={faStar} />
+                      <FontAwesomeIcon className="text-warning" icon={faStar} />
+                      <FontAwesomeIcon className="text-warning" icon={faStar} />
+                      <FontAwesomeIcon className="text-white border" icon={faStar} />
+                      <span className="ratingCount">21</span>
+                      <div>$1,900.00 </div>
+                    </div>
+                    <button className="btn btn-warning btn-sm float-end">Shop now</button>
+                  </div>
+                </div>
+              </div>
 
             </div>
             <div className="a_main_bottom_2 row m-0 mb-3">
@@ -529,7 +552,19 @@ class App extends Component {
           </div>
 
         </div>
-        <footer></footer>
+        <footer>
+          <div className="a_footer_top">
+            <div className="container">
+              <div className="row">
+                <div className="col-3">A</div>
+                <div className="col-3">A</div>
+                <div className="col-3">A</div>
+                <div className="col-3">A</div>
+              </div>
+            </div>
+          </div>
+          <div className="a_footer_bottom">A</div>
+        </footer>
       </div>
     )
   }
