@@ -3,19 +3,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
+// import something from somelibrary
+import { Button, Modal } from 'react-bootstrap';
 /**
 * @author
 * @class App
 **/
 
+
+//1. Class Component
+//2. Functional Component
 class App extends Component {
   //1. property
   state = {
     x: 'l934',
     y: '',
-    z: ''
+    z: '',
+    show: false
   }
   //2. constructor
   constructor(props) {
@@ -59,6 +64,13 @@ class App extends Component {
     // modalToggle.modal('show');
   }
   render() {
+
+    const handleClose = () => {
+      this.setState({ show: false });
+    }
+    const handleShow = () => {
+      this.setState({ show: true });
+    };
     return (
       <div>
         <div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -458,7 +470,26 @@ class App extends Component {
               <div className="col p-2">
                 <div className="a_mainbox1 p-3">
                   <div className="a_mainbox1_inner w-100 h-100 bg-danger">
-                    <div className=" w-100 bg-warning">ASD</div>
+                    <div className=" w-100 bg-warning">
+                      <Button variant="primary" onMouseEnter={handleShow} >
+                        Launch demo modal
+                      </Button>
+                      <Modal show={this.state.show} onHide={handleClose} animation={false}>
+                        <Modal.Header closeButton>
+                          <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                        <Modal.Footer>
+                          <Button variant="secondary" onClick={handleClose}>
+                            Close
+                          </Button>
+                          <Button variant="primary" onClick={handleClose}>
+                            Save Changes
+                          </Button>
+                        </Modal.Footer>
+                      </Modal>
+
+                    </div>
                     <a href="#" className="btn btn-link">See More</a>
                   </div>
                 </div>
@@ -498,7 +529,9 @@ class App extends Component {
 
             </div>
             <div className="a_main_bottom_2 row m-0 mb-3">
-              <div className="col-6">A</div>
+              <div className="col-6">
+                A
+              </div>
               <div className="col-3">B</div>
               <div className="col-3">C</div>
             </div>
@@ -647,13 +680,13 @@ class App extends Component {
             </div>
             <hr className="text-secondary" />
             <div className="d-flex justify-content-center">
-                <a href="#" className="btn me-5">
-                  <img className="img-fluid" src="./logo.png" />
-                </a>
-                <a href="#" className="btn btn-danger">B</a>
-              </div>
+              <a href="#" className="btn me-5">
+                <img className="img-fluid" src="./logo.png" />
+              </a>
+              <a href="#" className="btn btn-danger">B</a>
+            </div>
             <div class="d-flex justify-content-center">
-              
+
               <ul className="nav">
                 <li className="nav-item ms-2 me-2">
                   <a className="nav-link" href="#">Australia</a>
