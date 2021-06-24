@@ -1,0 +1,15 @@
+<div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className={'h-100 modal-dialog modal-dialog-scrollable headermodal ' + this.state.x} >
+            <div className="modal-content">
+              <div className="modal-header ">
+                
+              </div>
+              <div className="modal-body">
+                
+              </div>
+              <div className="">
+
+              </div>
+            </div>
+          </div>
+        </div>

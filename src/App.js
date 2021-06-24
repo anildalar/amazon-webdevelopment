@@ -20,7 +20,9 @@ class App extends Component {
     x: 'l934',
     y: '',
     z: '',
-    show: false
+    show: false,
+    showCountryModal: false,
+    showAllModal: false
   }
   //2. constructor
   constructor(props) {
@@ -63,7 +65,23 @@ class App extends Component {
     //myModal.show(modalToggle)
     // modalToggle.modal('show');
   }
+
   render() {
+    //Fat Arrow Function
+    const handleShow3 = () => {
+      this.setState({ showAllModal: true });
+    }
+    const handleClose3 = () => {
+      this.setState({ showAllModal: false });
+    }
+
+    //Fat Arrow Function
+    const handleShow2 = () => {
+      this.setState({ showCountryModal: true });
+    }
+    const handleClose2 = () => {
+      this.setState({ showCountryModal: false });
+    }
 
     const handleClose = () => {
       this.setState({ show: false });
@@ -73,221 +91,206 @@ class App extends Component {
     };
     return (
       <div>
-        <div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className={'h-100 modal-dialog modal-dialog-scrollable headermodal ' + this.state.x} >
-            <div className="modal-content">
-              <div className="modal-header text-white mhcolor">
-                <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
-                <button onClick={this.closemodal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <Modal className={'headermodal h-100 '} show={this.state.showAllModal} onHide={handleClose3} animation={false}  >
+          <Modal.Header className="text-white mhcolor">
+            <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
+            <button onClick={this.closemodal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </Modal.Header>
+          <Modal.Body className="ps-0 pe-0 pt-2 pb-2">
+            <h5 className="fw-bolder ps-4">Trending</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Echo &amp; Alexa </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">New Release</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Movies and Shakers</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Disabled</a>
+              </li>
+            </ul>
+            <h5 className="fw-bolder ps-4">Digital Content And Devices</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Echo &amp; Alexa <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Fire TV <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Kindle Ebooks</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Audible Audiobooks</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Audible Prime Video</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Audible Prime Music</a>
+              </li>
+            </ul>
+            <h5 className="fw-bolder ps-4">Shop By Department</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Mobile &amp; Computer <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">TV,Appliances,Electronics <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Men's Fashion</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Women's Fashion</a>
+              </li>
+            </ul>
+            <h5 className="fw-bolder ps-4">Programs &amp; Features</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Gift Cards &amp; Mobile Rechanges <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Fligh Ticket</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Amazon Assistance</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Full Store Directory</a>
+              </li>
+            </ul>
+            <h5 className="fw-bolder ps-4">Help &amp; Settings</h5>
+            <ul className="nav flex-column pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Your Account</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Customer Service</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Signin</a>
+              </li>
+            </ul>
+          </Modal.Body>
+        </Modal>
+        <Modal className="a_ht_countrydd" animation={false} show={this.state.showCountryModal} onHide={handleClose2}>
+          <Modal.Header>
+            <div className="form-check">
+              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+              <label className="form-check-label" for="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </Modal.Header>
+          <Modal.Body>
+            <form>
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
               </div>
-              <div className="modal-body ps-0 pe-0 pt-2 pb-2">
-                <h5 className="fw-bolder ps-4">Trending</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                <label className="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                <label className="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+              </div>
+            </form>
+          </Modal.Body>
+          <Modal.Footer>
+            <p><Flag code={'in'} height="16" /> You are shopping on Amazon.in.</p>
+            <a href="#" className="btn btn-link">Change country/region</a>
+          </Modal.Footer>
+        </Modal>
+        <Modal className="a_ht_signin_model" show={this.state.show} onHide={handleClose} animation={false}>
+          <Modal.Header className="text-center a_signin_model" closeButton>
+            <button className="btn btn-warning w-50">Sign in</button>
+            <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+          </Modal.Header>
+          <Modal.Body>
+            <div className="row">
+              <div className="col">
+                <h5>Your List</h5>
+                <ul className="nav flex-column">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Echo &amp; Alexa </a>
+                    <a className="nav-link" href="#">Create a Wish list</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">New Release</a>
+                    <a className="nav-link" href="#">Find a Wish list</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Movies and Shakers</a>
+                    <a className="nav-link" href="#">Wish from anywebsite</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                </ul>
-                <h5 className="fw-bolder ps-4">Digital Content And Devices</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Echo &amp; Alexa <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                    <a className="nav-link" href="#">Baby Wishlist</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Fire TV <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                    <a className="nav-link" href="#">Discover your style</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Kindle Ebooks</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Audible Audiobooks</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Audible Prime Video</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Audible Prime Music</a>
-                  </li>
-                </ul>
-                <h5 className="fw-bolder ps-4">Shop By Department</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Mobile &amp; Computer <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">TV,Appliances,Electronics <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Men's Fashion</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Women's Fashion</a>
-                  </li>
-                </ul>
-                <h5 className="fw-bolder ps-4">Programs &amp; Features</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Gift Cards &amp; Mobile Rechanges <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Fligh Ticket</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Amazon Assistance</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Full Store Directory</a>
-                  </li>
-                </ul>
-                <h5 className="fw-bolder ps-4">Help &amp; Settings</h5>
-                <ul className="nav flex-column pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Your Account</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Customer Service</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Signin</a>
+                    <a className="nav-link" href="#">Explore Showroom</a>
                   </li>
                 </ul>
               </div>
-              <div className="">
-
+              <div className="col">
+                <h5>Your Account</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">YourAccount</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Orders</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Wish List</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Recommendations</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Prime Membership</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Prime Video</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Subscribe &amp; Save Items</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Membership &amp; Subscription </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Amazon Business Account</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Your Seller Account</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Manage Your Content and Devices</a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="modal show a_ht_countrydd" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
-          <div className="modal-dialog modal-sm">
-            <div className="modal-content">
-              <div className="modal-header">
-                <div className="form-check">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label className="form-check-label" for="flexRadioDefault1">
-                    Default radio
-                  </label>
-                </div>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-                <form>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      Default radio
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                    <label className="form-check-label" for="flexRadioDefault2">
-                      Default checked radio
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      Default radio
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                    <label className="form-check-label" for="flexRadioDefault2">
-                      Default checked radio
-                    </label>
-                  </div>
-                </form>
-              </div>
-              <div className="modal-footer">
-                <p><Flag code={'in'} height="16" /> You are shopping on Amazon.in.</p>
-                <a href="#" className="btn btn-link">Change country/region</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="modal a_ht_signin_model" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header text-center a_signin_model">
-                <button className="btn btn-warning w-50">Sign in</button>
-                <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
-              </div>
-              <div className="modal-body">
-                <div className="row">
-                  <div className="col">
-                    <h5>Your List</h5>
-                    <ul className="nav flex-column">
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Create a Wish list</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Find a Wish list</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Wish from anywebsite</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Baby Wishlist</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Discover your style</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Explore Showroom</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col">
-                    <h5>Your Account</h5>
-                    <ul className="nav flex-column">
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">YourAccount</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Orders</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Wish List</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Recommendations</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Prime Membership</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Prime Video</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Subscribe &amp; Save Items</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Membership &amp; Subscription </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Amazon Business Account</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Your Seller Account</a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">Manage Your Content and Devices</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </Modal.Body>
+        </Modal>
         <header>
           <div className={'a_header_top p-1 w-100 ' + this.state.y}>
             <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
@@ -323,10 +326,10 @@ class App extends Component {
                 </div>
               </div>
             </form>
-            <button onMouseOver={this.handleCountryDD} className="btn h-100 p-0" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <button onMouseOver={handleShow2} className="btn h-100 p-0" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal2">
               <Flag className="d-inline-block me-1" code={'in'} height="16" /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
             </button>
-            <button className="text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }} data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <button onMouseEnter={handleShow} className="text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }} data-bs-toggle="modal" data-bs-target="#exampleModal3">
               <div>Hello, Sign in</div>
               <span className="fw-bolder">Account &amp; Lists</span>
             </button>
@@ -341,7 +344,7 @@ class App extends Component {
           <div className="a_header_bottom">
             <ul className="nav mt-1 ms-3 float-start">
               <li className="nav-item">
-                <a onClick={this.handleModal} data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
+                <a onClick={handleShow3} className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Best Seller</a>
@@ -471,23 +474,8 @@ class App extends Component {
                 <div className="a_mainbox1 p-3">
                   <div className="a_mainbox1_inner w-100 h-100 bg-danger">
                     <div className=" w-100 bg-warning">
-                      <Button variant="primary" onMouseEnter={handleShow} >
-                        Launch demo modal
-                      </Button>
-                      <Modal show={this.state.show} onHide={handleClose} animation={false}>
-                        <Modal.Header closeButton>
-                          <Modal.Title>Modal heading</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                        <Modal.Footer>
-                          <Button variant="secondary" onClick={handleClose}>
-                            Close
-                          </Button>
-                          <Button variant="primary" onClick={handleClose}>
-                            Save Changes
-                          </Button>
-                        </Modal.Footer>
-                      </Modal>
+
+
 
                     </div>
                     <a href="#" className="btn btn-link">See More</a>

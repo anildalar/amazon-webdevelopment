@@ -17,8 +17,8 @@
   font-size: 12px;
 } 
 .a_ht_signin_model{
-  top:30px;
-  left:368px;
+  top:30px !important;
+  left:368px !important;
 }
 .a_ht_signin_model a{
   font-size: 12px !important;
@@ -56,9 +56,9 @@ header{
   box-shadow: none !important;
 }
 .a_ht_countrydd{
-  width:20%;
-  left:950px;
-  top:20px;
+  width:20% !important;
+  left:950px !important;
+  top:20px !important;
 }
 .mhul li a{
   padding-left: 30px;
