@@ -1,11 +1,11 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 // import something from somelibrary
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Carousel, Modal } from 'react-bootstrap';
 /**
 * @author
 * @class App
@@ -57,13 +57,6 @@ class App extends Component {
       this.setState({ z: 'formboder' })
     }
 
-  }
-  handleCountryDD = () => {
-    //alert('ok');
-    //Show the exampleModel2 
-    // var modalToggle = document.getElementById('exampleModal2'); // relatedTarget
-    //myModal.show(modalToggle)
-    // modalToggle.modal('show');
   }
 
   render() {
@@ -398,39 +391,58 @@ class App extends Component {
         </header>
         <div className="a_main position-relative">
           <div className="a_main1 a_main_top">
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src="./images/slider/1.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/2.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/3.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/4.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/5.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/6.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/7.jpg" className="d-block" alt="..." />
-                </div>
-              </div>
-              <button className="carousel-control-prev h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/1.jpg"
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/2.jpg"
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/3.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/4.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/5.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/6.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block"
+                  src="./images/slider/7.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+
+            </Carousel>
           </div>
           <div className="ml-1 position-absolute a_main_bottom">
             <div className="a_main_bottom_1 row m-0 mb-3">
@@ -671,7 +683,7 @@ class App extends Component {
               <a href="#" className="btn me-5">
                 <img className="img-fluid" src="./logo.png" />
               </a>
-              <a href="#" className="btn btn-danger">B</a>
+              <button onMouseOver={handleShow2} type="button" class="a_foot_eng btn btn-sm pt-0 pb-0 btn-outline-secondary"><FontAwesomeIcon icon={faGlobe} /> English</button>
             </div>
             <div class="d-flex justify-content-center">
 
@@ -717,7 +729,83 @@ class App extends Component {
           </div>
 
 
-          <div className="a_footer_bottom">A</div>
+          <div className="a_footer_bottom">
+            <div className="container pt-4">
+              <div className="row">
+                <div className="col">
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">AbeBooks
+                        Books, art
+                        &amp; collectibles</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Shopbop
+                        Designer
+                        Fashion Brands</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">AbeBooks
+                        Books, art
+                        &amp; collectibles</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Shopbop
+                        Designer
+                        Fashion Brands</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">AbeBooks
+                        Books, art
+                        &amp; collectibles</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Shopbop
+                        Designer
+                        Fashion Brands</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">AbeBooks
+                        Books, art
+                        &amp; collectibles</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Shopbop
+                        Designer
+                        Fashion Brands</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">AbeBooks
+                        Books, art
+                        &amp; collectibles</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Shopbop
+                        Designer
+                        Fashion Brands</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p className="text-center mt-5 text-secondary">Conditions of Use &amp; SalePrivacy NoticeInterest-Based Ads© 1996-2021, Amazon.com, Inc. or its affiliates</p>
+          </div>
         </footer>
       </div>
     )

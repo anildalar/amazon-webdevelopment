@@ -1,15 +1,33 @@
-<div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className={'h-100 modal-dialog modal-dialog-scrollable headermodal ' + this.state.x} >
-            <div className="modal-content">
-              <div className="modal-header ">
-                
+<div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src="./images/slider/1.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/2.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/3.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/4.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/5.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/6.jpg" className="d-block" alt="..." />
+                </div>
+                <div className="carousel-item">
+                  <img src="./images/slider/7.jpg" className="d-block" alt="..." />
+                </div>
               </div>
-              <div className="modal-body">
-                
-              </div>
-              <div className="">
-
-              </div>
+              <button className="carousel-control-prev h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button className="carousel-control-next h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
-        </div>

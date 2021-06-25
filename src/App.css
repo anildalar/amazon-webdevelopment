@@ -119,6 +119,10 @@ header{
   height: 600px;
   border:1px dashed orange;
 }
+.a_main_top .carousel-control-prev,.a_main_top .carousel-control-next{
+  width: 5% !important;
+  height: 50% !important;
+}
 .a_main_bottom{
   height: 4564px;
   background: red;
@@ -179,6 +183,24 @@ header{
   height: 227px;
   background: #131921;
 }
+.a_footer_bottom ul{
+  width: 50%;
+}
+.a_footer_bottom ul li {
+  margin-bottom: 10px;
+}
+.a_footer_bottom a{
+  font-size: 12px;
+  padding: 0px;
+  color:#d0d7c5;
+}
+.a_footer_bottom a:hover{
+  text-decoration: underline;
+  color:#d0d7c5;
+}
 footer{
   border:1px dashed green;
+}
+.a_foot_eng:hover{
+  background: transparent !important;
 }
