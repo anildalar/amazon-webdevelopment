@@ -2,7 +2,7 @@
   border:1px dashed #000;
 }
 .a_mainbox1{
-  background-color: blue;
+  background-color:#fff;
   height: 98%;
   width: 98%;
 }
@@ -125,7 +125,6 @@ header{
 }
 .a_main_bottom{
   height: 4564px;
-  background: red;
   border:2px dashed #000;
   top:253px;
   left:20px;
@@ -148,20 +147,40 @@ header{
 }
 .a_main_bottom_3{
   height: 367px;
-  background: green;
+}
+.a_main_bottom_3 > .mb-5 > button:hover{
+  text-decoration: underline !important;
 }
 .imgCont{
   height: 300px;
-  border:1px dashed red;
 }
-.imgCont > div{
-  border:1px dashed blue;
-}
-#carouselExampleControls2 .a_cc{
-  background:#fff;
+#carouselExampleControls2 .carousel-control-prev,#carouselExampleControls2 .carousel-control-next{
+  background: #fff !important;
   width: 3%;
   height: 30%;
-  top:145px;
+  top:111px;
+  display: block !important; 
+  opacity: 1 !important;         
+}
+#carouselExampleControls2 .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #333;
+}
+
+#carouselExampleControls2  .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #333;
+}
+#carouselExampleControls2 .carousel-control-prev{
+  /* X   Y   B   S   C  */
+  box-shadow: 2px 0px 3px 3px rgba(0,0,0,0.3);
+}
+#carouselExampleControls2 .carousel-control-next{
+  /* X   Y   B   S   C  */
+  box-shadow: -2px 0px 3px 3px rgba(0,0,0,0.3);
 }
 
 .a_footer_top{

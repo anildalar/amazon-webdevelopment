@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent, faGlobe, faMoneyBill } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
@@ -535,52 +535,79 @@ class App extends Component {
               <div className="col-3">B</div>
               <div className="col-3">C</div>
             </div>
-            <div className="a_main_bottom_3 p-3">
-              <div className="">
-                <h3 className="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link">see all deals</button>
+            <div className="a_main_bottom_3 p-3 bg-white">
+              <div className="mb-5">
+                <h3 className="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link text-decoration-none">see all deals</button>
               </div>
-              <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner text-center">
-                  <div className="carousel-item active">
-                    <div className="imgCont row">
-                      <div className="col">1</div>
-                      <div className="col">2</div>
-                      <div className="col">3</div>
-                      <div className="col">4</div>
-                      <div className="col">5</div>
-                      <div className="col">6</div>
+              <Carousel id="carouselExampleControls2">
+                <Carousel.Item>
+                  <div className="imgCont row">
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31oTI44Ja3S.__AC_SY200_.jpg" />
+                      </div>
+                      <span className="d-block">  <span className="minPrice fw-bold">₹ 349.00</span> - ₹ <span className="maxPrice fw-bold">5,499.00</span></span>
+                      <span className="d-block">Ends in 15:06:55</span>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/41r9gQgxJOS.__AC_SY200_.jpg" />
+                      </div>
+                      <span className="d-block">  <span className="minPrice fw-bold">₹ 349.00</span> - ₹ <span className="maxPrice fw-bold">5,499.00</span></span>
+                      <span className="d-block">Ends in 15:06:55</span>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31qg4tENPTL.__AC_SY200_.jpg" />
+                      </div>
+                      <span className="d-block">  <span className="minPrice fw-bold">₹ 349.00</span> - ₹ <span className="maxPrice fw-bold">5,499.00</span></span>
+                      <span className="d-block">Ends in 15:06:55</span>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/51ivRBHcH6L.__AC_SY200_.jpg" />
+                      </div>
+                      <span className="d-block">  <span className="minPrice fw-bold">₹ 349.00</span> - ₹ <span className="maxPrice fw-bold">5,499.00</span></span>
+                      <span className="d-block">Ends in 15:06:55</span>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31oTI44Ja3S.__AC_SY200_.jpg" />
+                      </div>
+                      <span className="d-block">  <span className="minPrice fw-bold">₹ 349.00</span> - ₹ <span className="maxPrice fw-bold">5,499.00</span></span>
+                      <span className="d-block">Ends in 15:06:55</span>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31oTI44Ja3S.__AC_SY200_.jpg" />
+                      </div>
+                      <span className="d-block">  <span className="minPrice fw-bold">₹ 349.00</span> - ₹ <span className="maxPrice fw-bold">5,499.00</span></span>
+                      <span className="d-block">Ends in 15:06:55</span>
                     </div>
                   </div>
-                  <div className="carousel-item">
-                    <div className="imgCont row">
-                      <div className="col">7</div>
-                      <div className="col">8</div>
-                      <div className="col">9</div>
-                      <div className="col">10</div>
-                      <div className="col">11</div>
-                      <div className="col">12</div>
-                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgCont row">
+                    <div className="col">7</div>
+                    <div className="col">8</div>
+                    <div className="col">9</div>
+                    <div className="col">10</div>
+                    <div className="col">11</div>
+                    <div className="col">12</div>
                   </div>
-                  <div className="carousel-item">
-                    <div className="imgCont row">
-                      <div className="col">13</div>
-                      <div className="col">14</div>
-                      <div className="col">15</div>
-                      <div className="col">16</div>
-                      <div className="col">17</div>
-                      <div className="col">18</div>
-                    </div>
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgCont row">
+                    <div className="col">13</div>
+                    <div className="col">14</div>
+                    <div className="col">15</div>
+                    <div className="col">16</div>
+                    <div className="col">17</div>
+                    <div className="col">18</div>
                   </div>
-                </div>
-                <button className="a_cc carousel-control-prev rounded-end" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="a_cc carousel-control-next rounded-start" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
-              </div>
+                </Carousel.Item>
+              </Carousel>
             </div>
           </div>
 
