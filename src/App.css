@@ -1,6 +1,43 @@
 .tbdr{
   border:1px dashed #000;
 }
+.overylay{
+  /* background: rgba(0,0,0,0.5); */
+  
+  background:rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 10000;
+  transition: all linear 0.2s; /* I am giving transition for Animation */
+}
+.a_visible{
+  opacity: 1;
+  visibility: visible;
+}
+.a_invisible{
+  opacity: 0;
+  visibility: hidden;
+}
+.primeBox{
+  width: 340px;
+  height: 342px;
+  top:35px;
+}
+.a_header_bottom li:hover .prime ~ div{ /* I am using siblining selector ~ */
+    display: block !important; 
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  top:-10px;
+  left:50px;
+}
+header{
+  position: relative;
+  z-index: 10001;
+}
 .a_mainbox1{
   background-color:#fff;
   height: 98%;
@@ -35,8 +72,7 @@
 button:focus{
   box-shadow: none !important;
 }
-header{
-}
+
 .mhul li a:hover{
   background: #eaeded;
   color:#333;

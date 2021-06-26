@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent, faGlobe, faMoneyBill } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent, faGlobe, faMoneyBill, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
@@ -20,6 +20,7 @@ class App extends Component {
     x: 'l934',
     y: '',
     z: '',
+    overylay:'a_invisible',
     show: false,
     showCountryModal: false,
     showAllModal: false
@@ -58,8 +59,16 @@ class App extends Component {
     }
 
   }
-
+  // this.overlay
+  hideOverlay = ()=>{
+    this.setState({overylay:'a_invisible'});
+  }
+  overylay = ()=>{
+    this.setState({overylay:'a_visible'});
+  }
   render() {
+    //overlay 
+    
     //Fat Arrow Function
     const handleShow3 = () => {
       this.setState({ showAllModal: true });
@@ -84,6 +93,7 @@ class App extends Component {
     };
     return (
       <div>
+        <div className={'overylay w-100 h-100 '+this.state.overylay } ></div>
         <Modal className={'headermodal h-100 '} show={this.state.showAllModal} onHide={handleClose3} animation={false}  >
           <Modal.Header className="text-white mhcolor">
             <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
@@ -335,7 +345,7 @@ class App extends Component {
             </button>
           </div>
           <div className="a_header_bottom">
-            <ul className="nav mt-1 ms-3 float-start">
+            <ul className="nav mt-1 ms-2 float-start">
               <li className="nav-item">
                 <a onClick={handleShow3} className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
               </li>
@@ -347,6 +357,13 @@ class App extends Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Electronics</a>
+              </li>
+              <li className="nav-item position-relative">
+                <a onMouseOut={this.hideOverlay} onMouseOver={this.overylay} className="nav-link prime" href="#">Prime <FontAwesomeIcon icon={faCaretDown} /></a>
+                <div className="primeBox bg-white rounded-1 position-absolute p-3 d-none">
+                  <div class="arrow-up position-absolute"></div>
+                  <img className="img-fluid" src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" />
+                </div>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Fashion</a>
