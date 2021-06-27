@@ -52,7 +52,7 @@ class App extends Component {
     this.setState({ x: 'l433' })
   }
   formHandle = () => {
-    if (this.state.z == 'formboder') {
+    if (this.state.z === 'formboder') {
       this.setState({ z: '' })
     } else {
       this.setState({ z: 'formboder' })
@@ -308,7 +308,7 @@ class App extends Component {
               </div>
 
             </button>
-            <form className={'bg-white hform w-50 d-inline-block ' + this.state.z}>
+            <form className={'bg-white hform  w-50 d-inline-block ' + this.state.z}>
               <div className="row m-0">
                 <div className="col-1 p-0 border-end">
                   <div className="btn-group" role="group">
@@ -325,7 +325,7 @@ class App extends Component {
                   <input onBlur={this.formHandle} onFocus={this.formHandle} className="h-100 form-control rounded-0" />
                 </div>
                 <div className="col-1 p-0">
-                  <button className="w-100 h-100 btn btn-warning rounded-0" type="submit" ><FontAwesomeIcon className="text-dark fs-4" icon={faSearch} /> </button>
+                  <button className="w-100 hformsbmt h-100 btn btn-warning" type="submit" ><FontAwesomeIcon className="text-dark fs-4" icon={faSearch} /> </button>
                 </div>
               </div>
             </form>
@@ -361,7 +361,7 @@ class App extends Component {
               <li className="nav-item position-relative">
                 <a onMouseOut={this.hideOverlay} onMouseOver={this.overylay} className="nav-link prime" href="#">Prime <FontAwesomeIcon icon={faCaretDown} /></a>
                 <div className="primeBox bg-white rounded-1 position-absolute p-3 d-none">
-                  <div class="arrow-up position-absolute"></div>
+                  <div className="arrow-up position-absolute"></div>
                   <img className="img-fluid" src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" />
                 </div>
               </li>
@@ -521,7 +521,7 @@ class App extends Component {
               </div>
               <div className="col">
                 <div className="row">
-                  <div className="col-12 p-3 bg-white tbdr mb-4" style={{ 'height': 150 + 'px' }}>
+                  <div className="col-12 p-3 bg-white mb-4" style={{ 'height': 150 + 'px' }}>
                     <h4 className="mb-3">Sign in for your best experience</h4>
                     <button className="btn btn-warning w-100 border border-secondary rounded-1">Sign in securely</button>
                   </div>
@@ -554,9 +554,10 @@ class App extends Component {
             </div>
             <div className="a_main_bottom_3 p-3 bg-white">
               <div className="mb-5">
-                <h3 className="float-start">Today's Deals</h3><button type="button" className="float-start btn btn-link text-decoration-none">see all deals</button>
+                <h3 className="float-start">Today's Deals</h3>
+                <button type="button" className="float-start btn btn-link text-decoration-none">see all deals</button>
               </div>
-              <Carousel id="carouselExampleControls2">
+              <Carousel className="carouselExampleControls2">
                 <Carousel.Item>
                   <div className="imgCont row">
                     <div className="col p-0 text-center">
@@ -626,6 +627,68 @@ class App extends Component {
                 </Carousel.Item>
               </Carousel>
             </div>
+            <div className="a_main_bottom_4 overflow-hidden p-3 bg-success">
+              <div className="mb-5">
+                <h3 className="float-start">Best Sellers in Computers &amp; Accessories</h3>
+              </div>
+              <Carousel className="carouselExampleControls2 carouselExampleControls3">
+                <Carousel.Item>
+                  <div className="row">
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75 bg-danger">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31oTI44Ja3S.__AC_SY200_.jpg" />
+                      </div>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75 bg-danger">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/41r9gQgxJOS.__AC_SY200_.jpg" />
+                      </div>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75 bg-danger">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31qg4tENPTL.__AC_SY200_.jpg" />
+                      </div>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75 bg-danger">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/51ivRBHcH6L.__AC_SY200_.jpg" />
+                      </div>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75 bg-danger">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31oTI44Ja3S.__AC_SY200_.jpg" />
+                      </div>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <div className="imgPlace h-75 bg-danger">
+                        <img className="img-fluid" src="https://m.media-amazon.com/images/I/31oTI44Ja3S.__AC_SY200_.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgCont row">
+                    <div className="col">7</div>
+                    <div className="col">8</div>
+                    <div className="col">9</div>
+                    <div className="col">10</div>
+                    <div className="col">11</div>
+                    <div className="col">12</div>
+                  </div>
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgCont row">
+                    <div className="col">13</div>
+                    <div className="col">14</div>
+                    <div className="col">15</div>
+                    <div className="col">16</div>
+                    <div className="col">17</div>
+                    <div className="col">18</div>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+            </div>
           </div>
 
         </div>
@@ -647,10 +710,10 @@ class App extends Component {
                       <a className="nav-link" href="#">Press Releases</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link" href="#">Amazon Cares</a>
+                      <a className="nav-link" href="#">Amazon Cares</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link" href="#">Gift a Smile</a>
+                      <a className="nav-link" href="#">Gift a Smile</a>
                     </li>
                   </ul>
                 </div>
@@ -681,16 +744,16 @@ class App extends Component {
                       <a className="nav-link" href="#">Amazon Global Selling</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link " href="#">Become an Affiliate</a>
+                      <a className="nav-link " href="#">Become an Affiliate</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link " href="#">Fulfilment by Amazon</a>
+                      <a className="nav-link " href="#">Fulfilment by Amazon</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link " href="#">Advertise Your Products</a>
+                      <a className="nav-link " href="#">Advertise Your Products</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link " href="#">Amazon Pay on Merchants</a>
+                      <a className="nav-link " href="#">Amazon Pay on Merchants</a>
                     </li>
                   </ul>
                 </div>
@@ -707,16 +770,16 @@ class App extends Component {
                       <a className="nav-link" href="#">Return Centre</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link" href="#">100% Purchase Protection</a>
+                      <a className="nav-link" href="#">100% Purchase Protection</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link" href="#">Amazon App Download</a>
+                      <a className="nav-link" href="#">Amazon App Download</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link" href="#">Amazon Assistance Download Protection</a>
+                      <a className="nav-link" href="#">Amazon Assistance Download Protection</a>
                     </li>
                     <li className="nav-item">
-                      <a class="nav-link" href="#">Help</a>
+                      <a className="nav-link" href="#">Help</a>
                     </li>
                   </ul>
                 </div>
@@ -727,9 +790,9 @@ class App extends Component {
               <a href="#" className="btn me-5">
                 <img className="img-fluid" src="./logo.png" />
               </a>
-              <button onMouseOver={handleShow2} type="button" class="a_foot_eng btn btn-sm pt-0 pb-0 btn-outline-secondary"><FontAwesomeIcon icon={faGlobe} /> English</button>
+              <button onMouseOver={handleShow2} type="button" className="a_foot_eng btn btn-sm pt-0 pb-0 btn-outline-secondary"><FontAwesomeIcon icon={faGlobe} /> English</button>
             </div>
-            <div class="d-flex justify-content-center">
+            <div className="d-flex justify-content-center">
 
               <ul className="nav">
                 <li className="nav-item ms-2 me-2">
