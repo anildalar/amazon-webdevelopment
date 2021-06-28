@@ -60,3 +60,9 @@ top:950px;
 left:288px
 
 
+One React Component can contain Other React Components
+
+ index.js App
+	    -> 
+
+

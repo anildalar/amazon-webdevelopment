@@ -205,7 +205,7 @@ button:focus{
 .carouselExampleControls3 .carousel-control-prev,.carouselExampleControls3 .carousel-control-next{
   opacity: 0 !important;
 }
-.carouselExampleControls3 .carousel-control-prev:hover,.carouselExampleControls3 .carousel-control-next:hover{
+.a_main_bottom_4:hover .carousel-control-prev,.a_main_bottom_4:hover .carousel-control-next{
   opacity: 1 !important;
 }
 .carouselExampleControls2 .carousel-control-prev,.carouselExampleControls2 .carousel-control-next{
