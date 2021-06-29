@@ -148,7 +148,7 @@ button:focus{
 }
 .a_header_bottom a{
   /*TRBL*/
-  padding: 2px 10px 2px 10px !important;
+  padding: 2px 10px 2px 8px !important;
   color:#fff;
 
 }

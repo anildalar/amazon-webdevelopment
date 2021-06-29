@@ -5,6 +5,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCaretDown, faCartPlus, faChevronDown, faChevronRight, faMapMarkerAlt, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags'
 
+//import something from something
+import Ember from '../assets/fonts/ember/AmazonEmber_Rg.ttf';
+
+const myCustomFont = `
+    @font-face{
+        font-family:'emberRg';
+        src:url( '${Ember}') format('truetype');
+    }
+    html,body{
+        font-family:'emberRg',Arial,sans-serif !important;
+    }
+`;
+
 /**
 * @author
 * @class Header
@@ -90,6 +103,9 @@ class Header extends Component {
         }
         return (
             <React.Fragment>
+                <style>
+                 {myCustomFont}
+                </style>
                 <div className={'overylay w-100 h-100 ' + this.state.overylay} ></div>
                 <Modal className={'headermodal h-100 '} show={this.state.showAllModal} onHide={handleClose3} animation={false}  >
                     <Modal.Header className="text-white mhcolor">
