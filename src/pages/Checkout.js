@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Layout from '../components/Layout'
 
 /**
 * @author
@@ -7,13 +8,15 @@ import PropTypes from 'prop-types'
 **/
 
 class Checkout extends Component {
- state = {}
- render() {
-  return(
-   <div>Checkout</div>
+  state = {}
+  render() {
+    return (
+      <Layout>
+        <h1>This is Checkout Pages</h1>
+      </Layout>
     )
-   }
- }
+  }
+}
 
 
 Checkout.propTypes = {}

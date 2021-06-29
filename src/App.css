@@ -1,3 +1,4 @@
+/**************************** Home Css Start   *****************************/
 .tbdr{
   border:1px dashed #000;
 }
@@ -152,7 +153,7 @@ button:focus{
 
 }
 .a_main{
-  height: 4818px;
+  min-height: 4818px;
   border:1px dashed blue;
   background: #eaeded; 
 }
@@ -278,3 +279,28 @@ footer{
 .a_foot_eng:hover{
   background: transparent !important;
 }
+/**************************** Home Css End   *****************************/
+/**************************** Detail Css Start   *****************************/
+.a_dtl_main{
+  width: 98%;
+}
+.a_dtl_top_banner{
+  height: 50px;
+}
+.a_dtl_prodCont{
+  height: 1720px;
+}
+.a_dtl_prodContBottom{
+  height: 336px;
+}
+.a_dtl_havQ{
+  height: 170px;
+}
+.a_dtl_prodRelItem{
+  height: 370px;
+}
+.a_dtl_custAlsoRev{
+  height: 400px;
+}
+
+/**************************** Detail Css End   *****************************/

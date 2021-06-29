@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Layout from '../components/Layout'
 
 /**
 * @author
@@ -7,13 +8,15 @@ import PropTypes from 'prop-types'
 **/
 
 class Search extends Component {
- state = {}
- render() {
-  return(
-   <div>Search</div>
+  state = {}
+  render() {
+    return (
+      <Layout>
+        <div>This is Search Main pagess</div>
+      </Layout>
     )
-   }
- }
+  }
+}
 
 
 Search.propTypes = {}
