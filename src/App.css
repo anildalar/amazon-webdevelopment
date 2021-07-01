@@ -302,5 +302,23 @@ footer{
 .a_dtl_custAlsoRev{
   height: 400px;
 }
+.a_dtl_custQnA{
+  height: 540px;
 
+}
+.a_dtl_custReview_aside{
+  height: 311px;
+}
+.a_dtl_custReview_aside .progress{
+  background: #ffa41c !important;
+}
+.a_dtl_custReview_aside a{
+  text-decoration: none;
+}
+.a_individual_comment{
+  min-height: 300px;
+}
+.reviews_with_img{
+  height: 470px;
+}
 /**************************** Detail Css End   *****************************/
