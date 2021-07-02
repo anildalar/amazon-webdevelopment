@@ -321,4 +321,15 @@ footer{
 .reviews_with_img{
   height: 470px;
 }
+.a_dtl_prodThumbnail{
+  width: 50px;
+}
+.a_dtl_prodMainImg{
+  width: 490px;
+}
+.a_dtl_prodThumbnail a:hover{
+  
+  border:1px solid #e77600 !important;
+  box-shadow: 0px 0px 5px 2px #e77600;
+}
 /**************************** Detail Css End   *****************************/

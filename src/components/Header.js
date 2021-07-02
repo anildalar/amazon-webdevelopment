@@ -44,13 +44,14 @@ class Header extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
   handleScroll = () => {
-    console.log('ok ' + window.scrollY);
+    /* console.log('ok ' + window.scrollY); */
     if (window.scrollY >= 60) {//if scroll amount is greater than 50 then we will 
       // Add 'position-fixed top-0 start-0'
       this.setState({ y: 'position-fixed top-0 start-0' });
     } else {
       // Remove 'position-fixed top-0 start-0'
       this.setState({ y: '' });
+
     }
   }
   closemodal = () => {
