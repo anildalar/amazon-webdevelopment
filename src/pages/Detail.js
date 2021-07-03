@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faInfo, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 
 /**
 * @author
@@ -14,7 +14,7 @@ import { faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 class Detail extends Component {
     //1. Property 
     state = {
-        prodSrollFix:'position-relative top-0'
+        prodSrollFix: 'position-relative'
     }
 
     //2. Constructor
@@ -26,12 +26,14 @@ class Detail extends Component {
         window.addEventListener('scroll', this.detailHandleScroll)
     }
 
-    detailHandleScroll = ()=>{
+    detailHandleScroll = () => {
         console.log('detail ok ' + window.scrollY);
-        if(window.scrollY >= 90 && window.scrollY <= 1200){
-            this.setState({prodSrollFix:'position-fixed top-0'});
-        }else{
-            this.setState({prodSrollFix:'position-relative top-0'})
+        if (window.scrollY < 90) {
+            this.setState({ prodSrollFix: 'position-relative top-0' });
+        } else if (window.scrollY >= 90 && window.scrollY <= 1200) {
+            this.setState({ prodSrollFix: 'position-fixed top-0' });
+        } else {
+            this.setState({ prodSrollFix: 'position-relative t1225' })
         }
     }
     //3. Methods
@@ -44,7 +46,7 @@ class Detail extends Component {
                         <div className="col-9 p-0 tbdr">
                             <div className="row m-0 h-100">
                                 <div className="col-1 p-0 tbdr">
-                                    <ul className={'a_dtl_prodThumbnail nav flex-column mx-auto '+this.state.prodSrollFix}>
+                                    <ul className={'a_dtl_prodThumbnail nav flex-column mx-auto ' + this.state.prodSrollFix}>
                                         <li className="nav-item">
                                             <a className="nav-link p-0 mb-1 mt-1 border" href="#">
                                                 <img className="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/61pwrivrfUS._SL1500_.jpg" />
@@ -68,10 +70,10 @@ class Detail extends Component {
                                     </ul>
                                 </div>
                                 <div className="col-6 p-0 tbdr">
-                                    <div className={'a_dtl_prodMainImg '+this.state.prodSrollFix }>
-                                     <img className="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/61pwrivrfUS._SL1500_.jpg" />   
+                                    <div className={'bg-danger a_dtl_prodMainImg ' + this.state.prodSrollFix}>
+
                                     </div>
-                                    
+
                                 </div>
                                 <div className="col-5 p-0 tbdr">
                                     <h4>Lenovo IdeaPad 3 (2021) | 11th Gen Intel Core i5 |15.6" Full HD Thin and Light Laptop | 4-Side Narrow Bezel (8GB/512GB SSD/Windows 10/MS Office 2019/Backlit Keyboard/Arctic Grey/1.65Kg), 82H8014BIN</h4>
@@ -112,8 +114,61 @@ class Detail extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-3 p-0 tbdr">
-
+                        <div className="col-3 p-2 tbdr">
+                            <form>
+                                <div className="card">
+                                    <div className="card-header">
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <label className="form-check-label" for="flexRadioDefault1">
+                                                <span className="d-block text-dark">With Exchange</span>
+                                                <span className="d-block text-danger">Up to $ 17,000 off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                            <label className="form-check-label" for="flexRadioDefault2">
+                                                <span className="d-block text-dark">Without Exchange</span>
+                                                <span className="d-block text-danger">₹ 50,000 <span className="text-dark text-decoration-line-through">₹ 80,000</span> </span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <span className="d-inline-block">Quantity</span>
+                                            <select className="d-inline-block form-select form-select-sm w-25" aria-label="Default select example">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                        <div className="d-grid gap-2">
+                                            <button className="btn btn-warning" type="button">Add to cart</button>
+                                            <button className="btn btn-warning a_buynow" type="button">Buy Now</button>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label className="form-check-label" for="flexCheckDefault">
+                                                Add Gift Option
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr />
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <a href="#" className="border d-block mt-3 dtl_sponsordbox">
+                                <div className="dtl_sponsordbox_imgcont overflow-hidden">
+                                    <img className="img-thumbnail" width="330" src="https://images-na.ssl-images-amazon.com/images/I/61pwrivrfUS._SL1500_.jpg" />
+                                </div>
+                                <span className="float-end me-2">Sponsored <FontAwesomeIcon icon={faInfo} /></span>
+                            </a>
                         </div>
                     </div>
                     <div className="a_dtl_prodContBottom tbdr border-top border-bottom mb-1"></div>

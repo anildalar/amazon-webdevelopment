@@ -326,10 +326,23 @@ footer{
 }
 .a_dtl_prodMainImg{
   width: 490px;
+  height: 490px;
 }
 .a_dtl_prodThumbnail a:hover{
   
   border:1px solid #e77600 !important;
   box-shadow: 0px 0px 5px 2px #e77600;
+}
+.t1225{
+  top:1225px;
+}
+.a_buynow{
+  background: #ffa41c !important;
+}
+.dtl_sponsordbox{
+  height: 280px;
+}
+.dtl_sponsordbox_imgcont{
+  height: 250px;
 }
 /**************************** Detail Css End   *****************************/
