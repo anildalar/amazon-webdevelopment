@@ -328,6 +328,9 @@ footer{
   width: 490px;
   height: 490px;
 }
+.a_dtl_prodMainImg:hover > div > div:last-child img{
+  z-index: 100000 !important;
+}
 .a_dtl_prodThumbnail a:hover{
   
   border:1px solid #e77600 !important;
@@ -344,5 +347,9 @@ footer{
 }
 .dtl_sponsordbox_imgcont{
   height: 250px;
+}
+.list-group{
+  position: relative;
+  z-index: 1 !important;
 }
 /**************************** Detail Css End   *****************************/

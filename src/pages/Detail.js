@@ -1,3 +1,4 @@
+//Import Area
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
@@ -5,7 +6,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
+import ReactImageMagnify from 'react-image-magnify';
 
+//import something from somelibrary
+import watchImg1200 from '../assets/img/watchImg1200.jpg'
+import watchImg300 from '../assets/img/watchImg300.jpg';
 /**
 * @author
 * @class Detail
@@ -70,8 +75,20 @@ class Detail extends Component {
                                     </ul>
                                 </div>
                                 <div className="col-6 p-0 tbdr">
-                                    <div className={'bg-danger a_dtl_prodMainImg ' + this.state.prodSrollFix}>
-
+                                    <div className={'a_dtl_prodMainImg ' + this.state.prodSrollFix}>
+                                        <ReactImageMagnify {...{
+                                            smallImage: {
+                                                alt: 'Wristwatch by Ted Baker London',
+                                                isFluidWidth: true,
+                                                src: watchImg300
+                                            },
+                                            largeImage: {
+                                                src: watchImg1200,
+                                                width: 1200,
+                                                height: 1800
+                                            },
+                                            shouldUsePositiveSpaceLens: true
+                                        }} />
                                     </div>
 
                                 </div>
@@ -84,19 +101,11 @@ class Detail extends Component {
                                     <FontAwesomeIcon className="text-warning" icon={faStar} />
                                     <FontAwesomeIcon className="text-warning" icon={faStar} />
                                     <span className="ratingCount">4</span> Ratings
-                                    <hr />
+                                    
                                     <span className="d-block">M.R.P.:	<span className="text-decoration-line-through">₹ 79,890.00</span></span>
                                     <span className="d-block">Price:	<span className="text-danger">₹ 57,990.00</span></span>
                                     <span className="d-block">You Save:	<span className="text-danger">₹ 21,900.00 (27%)</span></span>
-                                    <ul className="list-group">
-                                        <li className="list-group-item">	Save Extra with 5 offers</li>
-                                        <li className="list-group-item">No Cost EMI: Avail No Cost EMI on select cards for orders above ₹3000 DetailsNo Cost EMI: Avail No Cost EMI on select cards for orders above ₹3000 Details</li>
-                                        <li className="list-group-item">Exchange Offer: Up to ₹ 16,300.00 off on Exchange</li>
-                                        <li className="list-group-item">A fourth item</li>
-                                        <li className="list-group-item">
-                                            <a href="#">See 3 more</a>
-                                        </li>
-                                    </ul>
+                                    
                                     <ul className="nav">
                                         <li className="nav-item">
                                             <a className="nav-link" href="#"> 7 Days Replacement</a>
@@ -115,7 +124,7 @@ class Detail extends Component {
                             </div>
                         </div>
                         <div className="col-3 p-2 tbdr">
-                            <form>
+                            {/* <form>
                                 <div className="card">
                                     <div className="card-header">
                                         <div className="form-check">
@@ -155,8 +164,7 @@ class Detail extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-                            <hr />
+                            </form> */}
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Open this select menu</option>
                                 <option value="1">One</option>
