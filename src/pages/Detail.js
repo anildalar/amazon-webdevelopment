@@ -8,9 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 import ReactImageMagnify from 'react-image-magnify';
 
-//import something from somelibrary
+//import { something } from somelibrary
 import watchImg1200 from '../assets/img/watchImg1200.jpg'
 import watchImg300 from '../assets/img/watchImg300.jpg';
+
+
 /**
 * @author
 * @class Detail
@@ -101,11 +103,11 @@ class Detail extends Component {
                                     <FontAwesomeIcon className="text-warning" icon={faStar} />
                                     <FontAwesomeIcon className="text-warning" icon={faStar} />
                                     <span className="ratingCount">4</span> Ratings
-                                    
+
                                     <span className="d-block">M.R.P.:	<span className="text-decoration-line-through">₹ 79,890.00</span></span>
                                     <span className="d-block">Price:	<span className="text-danger">₹ 57,990.00</span></span>
                                     <span className="d-block">You Save:	<span className="text-danger">₹ 21,900.00 (27%)</span></span>
-                                    
+
                                     <ul className="nav">
                                         <li className="nav-item">
                                             <a className="nav-link" href="#"> 7 Days Replacement</a>
@@ -124,48 +126,83 @@ class Detail extends Component {
                             </div>
                         </div>
                         <div className="col-3 p-2 tbdr">
-                            {/* <form>
-                                <div className="card">
-                                    <div className="card-header">
-                                        <div className="form-check">
-                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                            <label className="form-check-label" for="flexRadioDefault1">
-                                                <span className="d-block text-dark">With Exchange</span>
-                                                <span className="d-block text-danger">Up to $ 17,000 off</span>
-                                            </label>
+                            <form>
+                                <div className="accordion" id="accordionExample">
+                                    <div className="accordion-item">
+                                        <h2 className="accordion-header" id="headingOne">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                                <label className="form-check-label" for="flexRadioDefault1">
+                                                    <span className="d-block text-dark">With Exchange</span>
+                                                    <span className="d-block text-danger">Up to $ 17,000 off</span>
+                                                </label>
+
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div className="accordion-body">
+                                                <div>
+                                                    <span className="d-inline-block">Quantity</span>
+                                                    <select className="d-inline-block form-select form-select-sm w-25" aria-label="Default select example">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <div className="d-grid gap-2">
+                                                    <button className="btn btn-warning" type="button">Add to cart</button>
+                                                    <button className="btn btn-warning a_buynow" type="button">Buy Now</button>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input className="form-check-input" type="radio" checked="checked" name="flexCheckDefault" value="" id="flexCheckDefault1" />
+                                                    <label className="form-check-label" for="flexCheckDefault">
+                                                        Add Gift Option
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="card-body">
-                                        <div className="form-check">
-                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                            <label className="form-check-label" for="flexRadioDefault2">
-                                                <span className="d-block text-dark">Without Exchange</span>
-                                                <span className="d-block text-danger">₹ 50,000 <span className="text-dark text-decoration-line-through">₹ 80,000</span> </span>
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <span className="d-inline-block">Quantity</span>
-                                            <select className="d-inline-block form-select form-select-sm w-25" aria-label="Default select example">
-                                                <option value="1" selected>1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                            </select>
-                                        </div>
-                                        <div className="d-grid gap-2">
-                                            <button className="btn btn-warning" type="button">Add to cart</button>
-                                            <button className="btn btn-warning a_buynow" type="button">Buy Now</button>
-                                        </div>
-                                        <div className="form-check">
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <label className="form-check-label" for="flexCheckDefault">
-                                                Add Gift Option
-                                            </label>
+                                    <div className="accordion-item">
+                                        <h2 className="accordion-header" id="headingTwo">
+                                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <div className="form-check">
+                                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                                    <label className="form-check-label" for="flexRadioDefault2">
+                                                        <span className="d-block text-dark">Without Exchange</span>
+                                                        <span className="d-block text-danger">₹ 50,000 <span className="text-dark text-decoration-line-through">₹ 80,000</span> </span>
+                                                    </label>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div className="accordion-body">
+
+                                                <div>
+                                                    <span className="d-inline-block">Quantity</span>
+                                                    <select className="d-inline-block form-select form-select-sm w-25" aria-label="Default select example">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <div className="d-grid gap-2">
+                                                    <button className="btn btn-warning" type="button">Add to cart</button>
+                                                    <button className="btn btn-warning a_buynow" type="button">Buy Now</button>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input className="form-check-input" type="radio" name="flexCheckDefault" value="" id="flexCheckDefault2" />
+                                                    <label className="form-check-label" for="flexCheckDefault">
+                                                        Add Gift Option
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form> */}
-                            <select class="form-select" aria-label="Default select example">
+                            </form>
+                            <select className="form-select" aria-label="Default select example">
                                 <option selected>Open this select menu</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
