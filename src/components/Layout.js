@@ -13,10 +13,16 @@ class Layout extends Component {
     render() {
         return (
             <React.Fragment>
-                <Header></Header>     
-                {this.props.children}
-                <Footer></Footer>
-            </React.Fragment> 
+                <div style={{width:'100%'}}>
+                    <Header></Header>
+                    {this.props.children}
+                    <Footer></Footer>
+                </div>
+                <div className="d-none">
+                    A
+                </div>
+
+            </React.Fragment>
         )
     }
 }

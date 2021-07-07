@@ -1,3 +1,11 @@
+.r_aside_pannel{
+  width:8%;
+  height: 100%;
+  position: fixed;
+  top:0px;
+  right: 0px;
+  background-color: red;
+}
 /**************************** Home Css Start   *****************************/
 .tbdr{
   border:1px dashed #000;
@@ -351,5 +359,8 @@ footer{
 .list-group{
   position: relative;
   z-index: 1 !important;
+}
+.a_dtl_top_consider_ths_itm{
+  height: 200px;
 }
 /**************************** Detail Css End   *****************************/

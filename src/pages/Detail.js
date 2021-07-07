@@ -5,13 +5,15 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfo, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faInfo, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 import ReactImageMagnify from 'react-image-magnify';
 
 //import { something } from somelibrary
 import watchImg1200 from '../assets/img/watchImg1200.jpg'
 import watchImg300 from '../assets/img/watchImg300.jpg';
 
+//Default Import
+import topBanner from '../assets/img/main_top_banner.jpg';
 
 /**
 * @author
@@ -48,7 +50,23 @@ class Detail extends Component {
         return (
             <Layout>
                 <div className="a_main bg-white a_dtl_main mx-auto">
-                    <div className="a_dtl_top_banner tbdr"></div>
+                    <div className="a_dtl_top_banner tbdr">
+                        <img className="d-block mx-auto" src={topBanner} />
+                    </div>
+                    <div className="a_dtl_top_consider_ths_itm tbdr">
+                        <h3>Consider these available items</h3>
+                        <div className="row m-0 h-75">
+                            <div className="col-4 p-0 tbdr">
+                                <a href="#" className="btn btn-danger rounded-0 w-100 h-100">A</a>
+                            </div>
+                            <div className="col-4 p-0 tbdr">
+                                <a href="#" className="btn btn-danger rounded-0 w-100 h-100">A</a>
+                            </div>
+                            <div className="col-4 p-0 tbdr">
+                                <a href="#" className="btn btn-danger rounded-0 w-100 h-100">A</a>
+                            </div>
+                        </div>
+                    </div>
                     <div className="row m-0 a_dtl_prodCont">
                         <div className="col-9 p-0 tbdr">
                             <div className="row m-0 h-100">
@@ -121,11 +139,33 @@ class Detail extends Component {
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">No-Contact Delivery</a>
                                         </li>
+
                                     </ul>
+                                    <a href="#productInfo" className="btn btn-link">See more product details </a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-3 p-2 tbdr">
+                            <ul className="nav">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Share</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
+                                        <FontAwesomeIcon icon={faEnvelope} />
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">a
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
+
+                                    </a>
+                                </li>
+                            </ul>
                             <form>
                                 <div className="accordion" id="accordionExample">
                                     <div className="accordion-item">
@@ -224,10 +264,10 @@ class Detail extends Component {
                     <div className="a_dtl_custAlsoRev tbdr border-top border-bottom">
                         <h5>Customers who viewed this item also viewed</h5>
                     </div>
-                    <div className="a_dtl_prodInfo">
+                    <div className="a_dtl_prodInfo" id="productInfo">
                         <div className="row">
                             <div className="col-6 border-top pt-3">
-                                <h5 className="text-warning">Product information</h5>
+                                <h5  className="text-warning">Product information</h5>
                                 <table className="table">
                                     <thead>
                                         <tr>
