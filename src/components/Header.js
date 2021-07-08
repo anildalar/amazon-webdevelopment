@@ -29,52 +29,52 @@ class Header extends Component {
         x: 'l934',
         y: '',
         z: '',
-        overylay:'a_invisible',
+        overylay: 'a_invisible',
         show: false,
         showCountryModal: false,
         showAllModal: false
-      }
+    }
     //2. constructor
-    constructor(props){
+    constructor(props) {
         super(props);
     }
     //3.Method
-  componentDidMount() {
-    //this is the life cyle method that will be called when page is loaded successfully
-    window.addEventListener('scroll', this.handleScroll);
-  }
-  handleScroll = () => {
-    /* console.log('ok ' + window.scrollY); */
-    if (window.scrollY >= 60) {//if scroll amount is greater than 50 then we will 
-      // Add 'position-fixed top-0 start-0'
-      this.setState({ y: 'position-fixed top-0 start-0' });
-    } else {
-      // Remove 'position-fixed top-0 start-0'
-      this.setState({ y: '' });
+    componentDidMount() {
+        //this is the life cyle method that will be called when page is loaded successfully
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    handleScroll = () => {
+        /* console.log('ok ' + window.scrollY); */
+        if (window.scrollY >= 60) {//if scroll amount is greater than 50 then we will 
+            // Add 'position-fixed top-0 start-0'
+            this.setState({ y: 'position-fixed top-0 start-0' });
+        } else {
+            // Remove 'position-fixed top-0 start-0'
+            this.setState({ y: '' });
+
+        }
+    }
+    closemodal = () => {
+        this.setState({ x: 'l934' });
+    }
+    handleModal = () => {
+        this.setState({ x: 'l433' })
+    }
+    formHandle = () => {
+        if (this.state.z === 'formboder') {
+            this.setState({ z: '' })
+        } else {
+            this.setState({ z: 'formboder' })
+        }
 
     }
-  }
-  closemodal = () => {
-    this.setState({ x: 'l934' });
-  }
-  handleModal = () => {
-    this.setState({ x: 'l433' })
-  }
-  formHandle = () => {
-    if (this.state.z === 'formboder') {
-      this.setState({ z: '' })
-    } else {
-      this.setState({ z: 'formboder' })
+    // this.overlay
+    hideOverlay = () => {
+        this.setState({ overylay: 'a_invisible' });
     }
-
-  }
-  // this.overlay
-  hideOverlay = ()=>{
-    this.setState({overylay:'a_invisible'});
-  }
-  overylay = ()=>{
-    this.setState({overylay:'a_visible'});
-  }
+    overylay = () => {
+        this.setState({ overylay: 'a_visible' });
+    }
 
     //3. Method
     render() {
@@ -105,7 +105,7 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <style>
-                 {myCustomFont}
+                    {myCustomFont}
                 </style>
                 <div className={'overylay w-100 h-100 ' + this.state.overylay} ></div>
                 <Modal className={'headermodal h-100 '} show={this.state.showAllModal} onHide={handleClose3} animation={false}  >
@@ -237,77 +237,6 @@ class Header extends Component {
                         <a href="#" className="btn btn-link">Change country/region</a>
                     </Modal.Footer>
                 </Modal>
-                <Modal className="a_ht_signin_model" show={this.state.show} onHide={handleClose} animation={false}>
-                    <Modal.Header className="text-center a_signin_model" closeButton>
-                        <button className="btn btn-warning w-50">Sign in</button>
-                        <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div className="row">
-                            <div className="col">
-                                <h5>Your List</h5>
-                                <ul className="nav flex-column">
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Create a Wish list</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Find a Wish list</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Wish from anywebsite</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Baby Wishlist</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Discover your style</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Explore Showroom</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col">
-                                <h5>Your Account</h5>
-                                <ul className="nav flex-column">
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">YourAccount</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Orders</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Wish List</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Recommendations</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Prime Membership</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Prime Video</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Subscribe &amp; Save Items</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Membership &amp; Subscription </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Amazon Business Account</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Your Seller Account</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Manage Your Content and Devices</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Modal.Body>
-                </Modal>
                 <header>
                     <div className={'a_header_top p-1 w-100 ' + this.state.y}>
                         <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
@@ -343,12 +272,81 @@ class Header extends Component {
                                 </div>
                             </div>
                         </form>
-                        <button onMouseOver={handleShow2} className="btn h-100 p-0" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button className="btn h-100 p-0" style={{ 'width': '4%' }}>
                             <Flag className="d-inline-block me-1" code={'in'} height="16" /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
                         </button>
-                        <button onMouseEnter={handleShow} className="text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }} data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <button className="a_ht_signin_model_btn position-relative text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }}>
                             <div>Hello, Sign in</div>
                             <span className="fw-bolder">Account &amp; Lists</span>
+                            <div className="a_ht_signin_model position-absolute rounded-1 bg-white border">
+                                <div className="text-center border-bottom">
+                                    <button className="btn btn-warning w-50 mt-3">Sign in</button>
+                                    <p className="text-dark">New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+                                </div>
+                                <div className="row m-0">
+                                    <div className="col p-2">
+                                        <h5 className="text-dark m-0">Your List</h5>
+                                        <ul className="nav flex-column">
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Create a Wish list</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Find a Wish list</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Wish from anywebsite</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Baby Wishlist</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Discover your style</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Explore Showroom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="col p-2">
+                                        <h5 className="text-dark m-0">Your Account</h5>
+                                        <ul className="nav flex-column">
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">YourAccount</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Orders</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Wish List</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Recommendations</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Prime Membership</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Prime Video</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Subscribe &amp; Save Items</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Membership &amp; Subscription </a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Amazon Business Account</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Your Seller Account</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Manage Your Content and Devices</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </button>
                         <button className="text-start text-white btn h-100" style={{ 'width': '8%' }}>
                             <div>Returns</div>
