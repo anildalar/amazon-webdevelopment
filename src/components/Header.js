@@ -194,49 +194,6 @@ class Header extends Component {
                         </ul>
                     </Modal.Body>
                 </Modal>
-                <Modal className="a_ht_countrydd" animation={false} show={this.state.showCountryModal} onHide={handleClose2}>
-                    <Modal.Header>
-                        <div className="form-check">
-                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                            <label className="form-check-label" for="flexRadioDefault1">
-                                Default radio
-                            </label>
-                        </div>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <form>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                <label className="form-check-label" for="flexRadioDefault1">
-                                    Default radio
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                <label className="form-check-label" for="flexRadioDefault2">
-                                    Default checked radio
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                <label className="form-check-label" for="flexRadioDefault1">
-                                    Default radio
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                <label className="form-check-label" for="flexRadioDefault2">
-                                    Default checked radio
-                                </label>
-                            </div>
-                        </form>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <p><Flag code={'in'} height="16" /> You are shopping on Amazon.in.</p>
-                        <a href="#" className="btn btn-link">Change country/region</a>
-                    </Modal.Footer>
-                </Modal>
                 <header>
                     <div className={'a_header_top p-1 w-100 ' + this.state.y}>
                         <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
@@ -272,13 +229,53 @@ class Header extends Component {
                                 </div>
                             </div>
                         </form>
-                        <button className="btn h-100 p-0" style={{ 'width': '4%' }}>
+                        <button className="a_ht_countrydd_btn btn h-100 p-0 position-relative" style={{ 'width': '4%' }}>
                             <Flag className="d-inline-block me-1" code={'in'} height="16" /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
+                            <div className="text-start p-3 a_ht_countrydd position-absolute bg-white rounded-3 border">
+                                <div className="arrow-up position-absolute a_au_a_ht_countrydd"></div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                    <label className="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
+                                </div>
+                                <hr />
+                                <form>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label className="form-check-label" for="flexRadioDefault1">
+                                            Default radio
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                        <label className="form-check-label" for="flexRadioDefault2">
+                                            Default checked radio
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label className="form-check-label" for="flexRadioDefault1">
+                                            Default radio
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                        <label className="form-check-label" for="flexRadioDefault2">
+                                            Default checked radio
+                                        </label>
+                                    </div>
+                                </form>
+                                <hr />
+                                <p><Flag code={'in'} height="16" /> You are shopping on Amazon.in.</p>
+                                <a href="#" className="btn btn-link">Change country/region</a>
+                            </div>
                         </button>
-                        <button className="a_ht_signin_model_btn position-relative text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }}>
+                        <button onMouseOver={this.overylay} onMouseOut={this.hideOverlay} className="a_ht_signin_model_btn position-relative text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }}>
                             <div>Hello, Sign in</div>
                             <span className="fw-bolder">Account &amp; Lists</span>
                             <div className="a_ht_signin_model position-absolute rounded-1 bg-white border">
+                                <div className="arrow-up position-absolute a_au_a_ht_signin_model"></div>
                                 <div className="text-center border-bottom">
                                     <button className="btn btn-warning w-50 mt-3">Sign in</button>
                                     <p className="text-dark">New customer? <a href="#" className="btn btn-link">Start here.</a></p>
@@ -373,7 +370,7 @@ class Header extends Component {
                             <li className="nav-item position-relative">
                                 <a onMouseOut={this.hideOverlay} onMouseOver={this.overylay} className="nav-link prime" href="#">Prime <FontAwesomeIcon icon={faCaretDown} /></a>
                                 <div className="primeBox bg-white rounded-1 position-absolute p-3 d-none">
-                                    <div className="arrow-up position-absolute"></div>
+                                    <div className="arrow-up position-absolute a_aup_prime"></div>
                                     <img className="img-fluid" src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" />
                                 </div>
                             </li>

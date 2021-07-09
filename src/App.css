@@ -40,9 +40,12 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #fff;
+}
+.a_aup_prime{
   top:-10px;
   left:50px;
 }
+
 header{
   position: relative;
   z-index: 10001;
@@ -118,10 +121,30 @@ button:focus{
   border:none !important;
   box-shadow: none !important;
 }
+.a_ht_countrydd_btn:hover > div {
+  /* Step 2 */
+  opacity: 1;
+  visibility: visible;
+}
 .a_ht_countrydd{
-  width:20% !important;
-  left:950px !important;
-  top:20px !important;
+  /* Step 1 */
+  width:238px;
+  height: 300px;
+  top:50px;
+  left:0px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  /* transition: property duration timing-function delay|initial|inherit; */
+  transition:all 0.1s linear 0.2s; 
+}
+.a_au_a_ht_countrydd{
+    top:-11px;
+    left:15px;
+}
+.a_au_a_ht_signin_model{
+  top:-11px;
+  left:303px;
 }
 .mhul li a{
   padding-left: 30px;
