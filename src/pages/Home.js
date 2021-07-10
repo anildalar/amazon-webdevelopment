@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from 'react-bootstrap'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/Layout'
 
@@ -75,7 +75,45 @@ class Home extends Component {
                         <div className="a_main_bottom_1 row m-0 mb-3">
                             <div className="col p-2">
                                 <div className="a_mainbox1 p-3">
-                                    <div className="a_mainbox1_inner w-100 h-100 bg-danger">
+                                    <div className="a_mainbox1_inner w-100 h-100">
+                                        <div className="row m-0" style={{ height: '65px' }}>
+                                            <div className="col-4">
+                                                <FontAwesomeIcon style={{ fontSize: '3em', 'color': '#aab7b7' }} icon={faUserCircle} />
+                                            </div>
+                                            <div className="col-8">
+                                                <h4 className="m-0">Hi, <span className="custName">Anil</span></h4>
+                                                <span style={{ fontSize: '12px' }}>Customer since 2017</span>
+                                            </div>
+                                        </div>
+                                        <p>Top links for you</p>
+                                        <div className="row m-0 a_toplinks">
+                                            <div className="col-6 p-0">
+                                                <a href="#" className="btn rounded-0 w-100 h-100">
+                                                    <img className="img-fluid" src="https://m.media-amazon.com/images/G/01/HUD/Dashboard/ProfileCard/orders._AC_SR120,80_.png" />
+                                                    <p>Your Orders</p>
+                                                </a>
+                                            </div>
+                                            <div className="col-6 p-0">
+                                                <a href="#" className="btn rounded-0 w-100 h-100">
+                                                    <img className="img-fluid" src="https://m.media-amazon.com/images/G/31/HUD/Dashboard/ProfileCard/976419031._AC_SR120,80_.png" />
+                                                    <p>Mobiles &amp; Associeries</p>
+                                                </a>
+                                            </div>
+                                            <div className="col-6 p-0">
+                                                <a href="#" className="btn rounded-0 w-100 h-100">
+                                                    <img className="img-fluid" src="https://m.media-amazon.com/images/G/31/HUD/Dashboard/ProfileCard/6648217031._AC_SR120,80_.png" />
+                                                    <p>Fashion</p>
+                                                </a>
+                                            </div>
+                                            <div className="col-6 p-0">
+                                                <a href="#" className="btn rounded-0 w-100 h-100">
+                                                    <img className="img-fluid" src="https://m.media-amazon.com/images/G/31/HUD/Dashboard/ProfileCard/2454178031._AC_SR120,80_.png" />
+                                                    <p>Grocery</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="a_mainbox1_inner w-100 h-100 bg-danger d-none">
                                         <div className=" w-100 bg-warning">
                                             <h5>Top picks for your home</h5>
                                             <div className="row m-0">
