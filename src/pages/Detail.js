@@ -15,6 +15,8 @@ import watchImg300 from '../assets/img/watchImg300.jpg';
 //Default Import
 import topBanner from '../assets/img/main_top_banner.jpg';
 
+import v from '../assets/videos/v.mp4';
+
 /**
 * @author
 * @class Detail
@@ -49,6 +51,45 @@ class Detail extends Component {
     render() {
         return (
             <Layout>
+                <div className="modal a_prodVideoBoxModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-xl">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <ul className="nav nav-pills">
+                                    <li className="nav-item">
+                                        <a className="nav-link active rounded-0" data-bs-toggle="pill" href="#prodVideos">VIDEOS</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link rounded-0" data-bs-toggle="pill" href="#prodImages">IMAGES</a>
+                                    </li>
+                                </ul>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body tbdr">
+                                <div className="tab-content">
+                                    <div className="tab-pane container active" id="prodVideos">
+                                        <div className="row ">
+                                            <div className="col-7 tbdr">
+                                                <video className="w-100" controls>
+                                                    <source src={ v } type="video/mp4" />
+                                                    <source src="./videos/movie.ogg" type="video/ogg" />
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                            <div className="col-5 tbdr">B</div>
+                                        </div>
+                                    </div>
+                                    <div className="tab-pane container fade" id="prodImages">
+                                        <div className="row ">
+                                            <div className="col-8 tbdr">A</div>
+                                            <div className="col-4 tbdr">B</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="a_main bg-white a_dtl_main mx-auto">
                     <div className="a_dtl_top_banner tbdr">
                         <img className="d-block mx-auto" src={topBanner} />
@@ -78,7 +119,8 @@ class Detail extends Component {
                                             </a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link p-0 mb-1 mt-1 border" href="#">
+                                            <a className="a_playback nav-link p-0 mb-1 mt-1 border overflow-hidden" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className="img-fluid position-absolute" src="./images/tr.png" />
                                                 <img className="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/61pwrivrfUS._SL1500_.jpg" />
                                             </a>
                                         </li>
@@ -157,7 +199,7 @@ class Detail extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">a
-                                        <i class="fab fa-facebook-square"></i>
+                                        <i className="fab fa-facebook-square"></i>
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -267,7 +309,7 @@ class Detail extends Component {
                     <div className="a_dtl_prodInfo" id="productInfo">
                         <div className="row">
                             <div className="col-6 border-top pt-3">
-                                <h5  className="text-warning">Product information</h5>
+                                <h5 className="text-warning">Product information</h5>
                                 <table className="table">
                                     <thead>
                                         <tr>

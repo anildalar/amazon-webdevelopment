@@ -405,4 +405,30 @@ footer{
 .a_dtl_top_consider_ths_itm{
   height: 200px;
 }
+.a_prodVideoBoxModal{
+  z-index:100000000 !important;
+}
+.a_prodVideoBoxModal > div{
+  margin-top:62px !important; 
+}
+
+.a_prodVideoBoxModal a:hover{
+  color:#333;
+}
+.a_prodVideoBoxModal a{
+  color:#333;
+}
+.a_prodVideoBoxModal .nav-link.active{
+  border-bottom: 2px solid orange;
+  background: transparent !important;
+  color:#000 !important;
+}
+.a_prodVideoBoxModal .modal-body{
+  height: 456px;
+}
 /**************************** Detail Css End   *****************************/
+@media (min-width: 1200px){
+  .modal-xl {
+      max-width: 1280px !important;
+  }
+}

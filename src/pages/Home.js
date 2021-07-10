@@ -75,6 +75,7 @@ class Home extends Component {
                         <div className="a_main_bottom_1 row m-0 mb-3">
                             <div className="col p-2">
                                 <div className="a_mainbox1 p-3">
+                                    {/* Start - Only when user is logged in */}
                                     <div className="a_mainbox1_inner w-100 h-100">
                                         <div className="row m-0" style={{ height: '65px' }}>
                                             <div className="col-4">
@@ -113,6 +114,9 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
+                                    {/* End - Only when user is logged in */}
+
+                                    {/* Start - Only when user is not logged in */}
                                     <div className="a_mainbox1_inner w-100 h-100 bg-danger d-none">
                                         <div className=" w-100 bg-warning">
                                             <h5>Top picks for your home</h5>
@@ -145,6 +149,7 @@ class Home extends Component {
                                         </div>
                                         <a href="#" className="btn btn-link">See More</a>
                                     </div>
+                                    {/* End - Only when user is not logged in */}
                                 </div>
                             </div>
                             <div className="col p-2">
