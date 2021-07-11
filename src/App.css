@@ -426,6 +426,29 @@ footer{
 .a_prodVideoBoxModal .modal-body{
   height: 456px;
 }
+.a_dtl_prodVideBox a{
+  border:2px solid #d5dbdb !important;
+}
+.a_dtl_prodVideBox a:hover,.a_dtl_prodVideBox a:focus{
+  border:2px solid #e77600 !important;
+}
+.prodVideoBoxModalBody{
+  height: 440px;
+  overflow: hidden;
+}
+.prodVideoBoxModalBody,.prodVideoBoxModalHeader{
+  width:93%;
+}
+.prodVBoxcloseBtn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-size: 10px;
+}
+.prodVideoBoxModalHeader > .nav{
+  top:18px;
+  z-index: 10000;
+}
 /**************************** Detail Css End   *****************************/
 @media (min-width: 1200px){
   .modal-xl {

@@ -16,6 +16,7 @@ import watchImg300 from '../assets/img/watchImg300.jpg';
 import topBanner from '../assets/img/main_top_banner.jpg';
 
 import v from '../assets/videos/v.mp4';
+import laptop from '../assets/img/laptop.jpg';
 
 /**
 * @author
@@ -54,8 +55,8 @@ class Detail extends Component {
                 <div className="modal a_prodVideoBoxModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-xl">
                         <div className="modal-content">
-                            <div className="modal-header">
-                                <ul className="nav nav-pills">
+                            <div className="modal-header prodVideoBoxModalHeader mx-auto">
+                                <ul className="nav nav-pills position-relative">
                                     <li className="nav-item">
                                         <a className="nav-link active rounded-0" data-bs-toggle="pill" href="#prodVideos">VIDEOS</a>
                                     </li>
@@ -63,26 +64,69 @@ class Detail extends Component {
                                         <a className="nav-link rounded-0" data-bs-toggle="pill" href="#prodImages">IMAGES</a>
                                     </li>
                                 </ul>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" className="btn-close prodVBoxcloseBtn" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div className="modal-body tbdr">
+                            <div className="modal-body prodVideoBoxModalBody mx-auto border-top">
                                 <div className="tab-content">
                                     <div className="tab-pane container active" id="prodVideos">
                                         <div className="row ">
                                             <div className="col-7 tbdr">
-                                                <video className="w-100" controls>
-                                                    <source src={ v } type="video/mp4" />
+                                                <video className="w-100 p-3 bg-secondary" controls>
+                                                    <source src={v} type="video/mp4" />
                                                     <source src="./videos/movie.ogg" type="video/ogg" />
                                                     Your browser does not support the video tag.
                                                 </video>
+                                                <h6>HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1-inch FHD Gaming Laptop (8GB/1TB HDD +</h6>
+                                                <p>Amazon Videos</p>
                                             </div>
-                                            <div className="col-5 tbdr">B</div>
+                                            <div className="col-5 tbdr">
+                                                <span class="badge bg-secondary w-100">Videos for this product</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="tab-pane container fade" id="prodImages">
-                                        <div className="row ">
-                                            <div className="col-8 tbdr">A</div>
-                                            <div className="col-4 tbdr">B</div>
+                                        <div className="row tbdr" >
+                                            <div className="col-9 text-center tbdr">
+                                                <img className="img-fluid w-75" src={laptop} />
+                                            </div>
+                                            <div className="col-3 p-0 tbdr">
+                                                <h6>
+                                                    HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1" (40.9 cms) FHD Gaming Laptop (8GB/1TB HDD + 256GB SSD/Windows 10/MS Office/NVIDIA GTX 1650...
+                                                </h6>
+                                                <p>Pattern name: <span className="text-dark prodName">Laptop</span></p>
+                                                <ul class="nav a_dtl_prodVideBox">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-0 m-2" href="#">
+                                                            <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-0 m-2" href="#">
+                                                            <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-0 m-2" href="#">
+                                                            <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-0 m-2" href="#">
+                                                            <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-0 m-2" href="#">
+                                                            <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-0 m-2" href="#">
+                                                            <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +138,7 @@ class Detail extends Component {
                     <div className="a_dtl_top_banner tbdr">
                         <img className="d-block mx-auto" src={topBanner} />
                     </div>
-                    <div className="a_dtl_top_consider_ths_itm tbdr">
+                    <div className="a_dtl_top_consider_ths_itm tbdr d-none">
                         <h3>Consider these available items</h3>
                         <div className="row m-0 h-75">
                             <div className="col-4 p-0 tbdr">
