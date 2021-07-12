@@ -340,8 +340,11 @@ footer{
 .a_dtl_prodCont{
   height: 1720px;
 }
-.a_dtl_prodContBottom{
+.a_dtl_FreqBroughtTogether{
   height: 336px;
+}
+.a_dtl_FreqBroughtTogether nav{
+  --bs-breadcrumb-divider: '+' !important;
 }
 .a_dtl_havQ{
   height: 170px;
@@ -423,18 +426,11 @@ footer{
   background: transparent !important;
   color:#000 !important;
 }
-.a_prodVideoBoxModal .modal-body{
-  height: 456px;
-}
 .a_dtl_prodVideBox a{
   border:2px solid #d5dbdb !important;
 }
 .a_dtl_prodVideBox a:hover,.a_dtl_prodVideBox a:focus{
   border:2px solid #e77600 !important;
-}
-.prodVideoBoxModalBody{
-  height: 440px;
-  overflow: hidden;
 }
 .prodVideoBoxModalBody,.prodVideoBoxModalHeader{
   width:93%;
@@ -445,10 +441,15 @@ footer{
   right:10px;
   font-size: 10px;
 }
-.prodVideoBoxModalHeader > .nav{
-  top:18px;
-  z-index: 10000;
+.havQInput:focus{
+  border:none !important;
+  box-shadow: none !important;
 }
+/*
+.havQForm:focus{
+  border:1px solid blue !important;
+}
+*/
 /**************************** Detail Css End   *****************************/
 @media (min-width: 1200px){
   .modal-xl {

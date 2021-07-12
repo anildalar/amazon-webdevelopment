@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faInfo, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faInfo ,faInfoCircle, faSearch, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 import ReactImageMagnify from 'react-image-magnify';
 
 //import { something } from somelibrary
@@ -55,8 +55,8 @@ class Detail extends Component {
                 <div className="modal a_prodVideoBoxModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-xl">
                         <div className="modal-content">
-                            <div className="modal-header prodVideoBoxModalHeader mx-auto">
-                                <ul className="nav nav-pills position-relative">
+                            <div className="modal-header p-0 pt-4 prodVideoBoxModalHeader mx-auto">
+                                <ul className="nav nav-pills">
                                     <li className="nav-item">
                                         <a className="nav-link active rounded-0" data-bs-toggle="pill" href="#prodVideos">VIDEOS</a>
                                     </li>
@@ -70,8 +70,8 @@ class Detail extends Component {
                                 <div className="tab-content">
                                     <div className="tab-pane container active" id="prodVideos">
                                         <div className="row ">
-                                            <div className="col-7 tbdr">
-                                                <video className="w-100 p-3 bg-secondary" controls>
+                                            <div className="col-7">
+                                                <video className="w-100 p-3 bg-light" controls>
                                                     <source src={v} type="video/mp4" />
                                                     <source src="./videos/movie.ogg" type="video/ogg" />
                                                     Your browser does not support the video tag.
@@ -79,49 +79,49 @@ class Detail extends Component {
                                                 <h6>HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1-inch FHD Gaming Laptop (8GB/1TB HDD +</h6>
                                                 <p>Amazon Videos</p>
                                             </div>
-                                            <div className="col-5 tbdr">
-                                                <span class="badge bg-secondary w-100">Videos for this product</span>
+                                            <div className="col-5">
+                                                <p className="badge bg-light w-100">Videos for this product</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="tab-pane container fade" id="prodImages">
-                                        <div className="row tbdr" >
-                                            <div className="col-9 text-center tbdr">
+                                        <div className="row" >
+                                            <div className="col-9 text-center">
                                                 <img className="img-fluid w-75" src={laptop} />
                                             </div>
-                                            <div className="col-3 p-0 tbdr">
+                                            <div className="col-3 p-0">
                                                 <h6>
                                                     HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1" (40.9 cms) FHD Gaming Laptop (8GB/1TB HDD + 256GB SSD/Windows 10/MS Office/NVIDIA GTX 1650...
                                                 </h6>
                                                 <p>Pattern name: <span className="text-dark prodName">Laptop</span></p>
-                                                <ul class="nav a_dtl_prodVideBox">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-0 m-2" href="#">
+                                                <ul className="nav a_dtl_prodVideBox">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0 m-2" href="#">
                                                             <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-0 m-2" href="#">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0 m-2" href="#">
                                                             <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-0 m-2" href="#">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0 m-2" href="#">
                                                             <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-0 m-2" href="#">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0 m-2" href="#">
                                                             <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-0 m-2" href="#">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0 m-2" href="#">
                                                             <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-0 m-2" href="#">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0 m-2" href="#">
                                                             <img src="https://images-na.ssl-images-amazon.com/images/I/41vkWkERzhL._AA50_.jpg" />
                                                         </a>
                                                     </li>
@@ -181,7 +181,7 @@ class Detail extends Component {
                                     </ul>
                                 </div>
                                 <div className="col-6 p-0 tbdr">
-                                    <div className={'a_dtl_prodMainImg ' + this.state.prodSrollFix}>
+                                    <div className={'d-none a_dtl_prodMainImg ' + this.state.prodSrollFix}>
                                         <ReactImageMagnify {...{
                                             smallImage: {
                                                 alt: 'Wristwatch by Ted Baker London',
@@ -342,8 +342,51 @@ class Detail extends Component {
                             </a>
                         </div>
                     </div>
-                    <div className="a_dtl_prodContBottom tbdr border-top border-bottom mb-1"></div>
-                    <div className="a_dtl_havQ tbdr border-top"></div>
+                    <div className="a_dtl_FreqBroughtTogether tbdr border-top border-bottom mb-1">
+                        <h4>Frequently bought together</h4>
+                        <nav aria-label="breadcrumb">
+                            <ol className="breadcrumb">
+                                <li className="breadcrumb-item">
+                                    <a href="#">
+                                        <img className="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/71FHcGAPevL._AC_UL116_SR116,116_.jpg" />
+                                    </a>
+                                </li>
+                                <li className="breadcrumb-item" aria-current="page">
+                                    <a href="#">
+                                        <img className="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/61Ne2MBo6KL._AC_UL116_SR116,116_.jpg" />
+                                    </a>
+                                </li>
+                            </ol>
+                        </nav>
+                        <p> <FontAwesomeIcon className="text-primary" icon={faInfoCircle} /> One of these items is dispatched sooner than the other.<a href="#">Show details</a></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                            <label class="form-check-label" for="flexCheckChecked">
+                                This item: HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1" (40.9 cms) FHD Gaming Laptop (8GB/1TB HDD + 256GB SSD/Windows 10/MS Office/NVIDIA GTX 1650 4GB/Shadow Black), 16-a0022TX 
+                                <span className="text-danger">₹91,713.00</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                            <label class="form-check-label" for="flexCheckChecked">
+                                HP 200 Wireless Mouse (Black) <span className="text-danger">₹699.00</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div className="a_dtl_havQ tbdr border-top">
+                        <h4>Have a question?</h4>
+                        <p>Find answers in product info, Q&amp;As, reviews</p>
+                        <form className="havQForm border w-75 rounded-3">
+                            <div className="row m-0">
+                                <div className="col-1 p-0">
+                                    <FontAwesomeIcon className="float-end m-2" icon={faSearch} />
+                                </div>
+                                <div className="col-11 p-0">
+                                    <input className="havQInput form-control form-control-sm border-0" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                     <div className="a_dtl_prodRelItem tbdr border-top border-bottom">
                         <h5>Products related to this item</h5>
                     </div>
