@@ -324,7 +324,7 @@ button:focus{
   color:#d0d7c5;
 }
 footer{
-  border:1px dashed green;
+  
 }
 .a_foot_eng:hover{
   background: transparent !important;
@@ -456,3 +456,15 @@ footer{
       max-width: 1280px !important;
   }
 }
+
+/************************** SignIn Start  *******************************/
+.signinformcont a.logo{
+  width: 138px;
+  height: 40px;
+  line-height: 46px;
+  text-align: center;
+  background: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
+  background-position: 21px -124px;
+}
+
+/************************** SignIn End  *******************************/
