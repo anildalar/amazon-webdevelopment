@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Layout from '../components/Layout'
 
 /**
 * @author
@@ -21,9 +20,10 @@ class SignIn extends Component {
 
                     <div className="col-3 p-0 ">
                         <div className="text-center">
-                            <a href="#" className="d-block m-3 mx-auto logo">
-
+                            <a href="#" className=" d-block m-3 mx-auto logo spriteSheet position-relative">
+                                <div className="ccName position-absolute spriteSheet"></div>
                             </a>
+                            
                         </div>
                         <div className="p-4 border">
                             <form>
@@ -32,7 +32,7 @@ class SignIn extends Component {
                                     <label for="mobno" className="form-label">Email or mobile phone number</label>
                                     <input type="text" className="form-control form-control-sm" id="mobno" placeholder="" />
                                 </div>
-                                <button type="submit" className="btn btn-warning btn-sm border w-100">Continue</button>
+                                <button type="submit" className="btn amznBtn btn-sm border w-100">Continue</button>
                                 <p>
                                     By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
                                 </p>
@@ -42,7 +42,7 @@ class SignIn extends Component {
                         
                         <hr />
                         <p className="text-center">New to Amazon?</p>
-                        <button type="button" className="btn btn-light border w-100 border">Create your Amazon Account</button>
+                        <button type="button" className="btn btn-light btn-sm border w-100 border">Create your Amazon Account</button>
                     </div>
                 </div>
                 <footer className="">

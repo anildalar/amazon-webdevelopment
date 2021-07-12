@@ -1,3 +1,8 @@
+.amznBtn{
+  /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+  background-image:-webkit-linear-gradient(top,#faebc8 0%,#faebc8 5% ,#f7dea1 5%,#f0c14c) !important;
+}
+
 .r_aside_pannel{
   width:8%;
   height: 100%;
@@ -463,8 +468,17 @@ footer{
   height: 40px;
   line-height: 46px;
   text-align: center;
+}
+.spriteSheet{
   background: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
   background-position: 21px -124px;
 }
 
+.ccName{
+  width: 17px;
+  height: 17px;
+  top:10px; 
+  right: -11px;;
+  background-position: 173px -206px !important;
+}
 /************************** SignIn End  *******************************/
