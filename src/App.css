@@ -482,3 +482,36 @@ footer{
   background-position: 173px -206px !important;
 }
 /************************** SignIn End  *******************************/
+/************************** Search Start  *******************************/
+.a_srch_main{
+  
+}
+.a_srch_top{
+  height: 38px;
+  box-shadow: 0px 2px 15px 3px rgba(0,0,0,0.1);
+}
+.a_srch_mbox{
+  min-height: 2000px;
+}
+.a_srch_mbox > .col-3{
+  width: 20% !important;
+}
+.a_srch_mbox > .col-9{
+  width: 80% !important;
+}
+.a_srch_FilterTop a{
+  border-radius: 10px !important;
+}
+.a_srch_FilterTop a:hover{
+  border:1px solid #000 !important;
+}
+.a_srch_ProdResult{
+  height: 260px;
+}
+.a_3start{
+  width: 98px;
+  height: 20px;
+  background-image: url('https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png');
+  background-position: 220px 73px;
+}
+/************************** Search End  *******************************/
