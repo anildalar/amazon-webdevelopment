@@ -511,7 +511,38 @@ footer{
 .a_3start{
   width: 98px;
   height: 20px;
+  
+}
+.sprtSht{
   background-image: url('https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png');
+  background-repeat: no-repeat;
+}
+.a_1star{
   background-position: 220px 73px;
+  
+}
+.a_1_5star{
+  background-position: 220px 73px;
+}
+.a_2star{
+  background-position: 220px 73px;
+}
+.a_2_5start{
+  background-position: 220px 73px;
+}
+.a_3star{
+  background-position: 220px 73px;
+}
+.a_3_5star{
+  background-position: 220px 73px;
+}
+.a_4star{
+  background-position: 220px 73px;
+}
+.a_4_5star{
+  background-position: -389px -206px
+}
+.a_5star{
+  background-position: -100px -110px;
 }
 /************************** Search End  *******************************/

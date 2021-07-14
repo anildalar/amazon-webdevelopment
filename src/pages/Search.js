@@ -9,7 +9,9 @@ import Layout from '../components/Layout'
 //This is a class Componet
 class Search extends Component {
   //1. Property
-  state = {}
+  state = {
+    rating:'a_4_5star'
+  }
 
   //2. Constructor
   constructor(props) {
@@ -37,7 +39,7 @@ class Search extends Component {
           </div>
           <div className="row a_srch_mbox m-0 mt-3">
             <div className="col-3 border-end">A</div>
-            <div className="col-9 border-start">
+            <div className="col-9 p-4 border-start">
               <div className="a_srch_FilterTop border-top border-bottom pt-3 pb-3">
                 <h2>Filter by price</h2>
                 <ul className="nav">
@@ -58,17 +60,17 @@ class Search extends Component {
                   </li>
                 </ul>
               </div>
-              <div className="a_srch_ProdResult border-top border-bottom pt-4 pb-4">
-                <div className="row h-100">
-                  <div className="col-3 tbdr">
+              <div className="a_srch_ProdResult  pt-4 pb-4">
+                <div className="row m-0 w-100 border-top border-bottom">
+                  <div className="col-3 p-3">
                     <a href="#">
                       <img className="img-fluid" src="https://m.media-amazon.com/images/I/4189ZMqGFIS._AC_UY218_.jpg" />
                     </a>
                   </div>
-                  <div className="col-9 tbdr">
+                  <div className="col-9 p-3">
                     <h5><a href="#" className="text-decoration-none text-dark">Dell Inspiron 3505 15.6" FHD Display Laptop (R5-3450U / 8GB / 1TB + 256Gb SSD / Vega Graphics / Win 10 + MSO / Accent Black) D560431WIN9B</a>ss</h5>
                     <p>
-                        <div className="a_3start"></div>
+                        <a href="#" className={'a_3start d-block sprtSht '+this.state.rating}></a>
                     </p>
                   </div>
                 </div>
