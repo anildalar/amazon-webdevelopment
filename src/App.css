@@ -518,31 +518,42 @@ footer{
   background-repeat: no-repeat;
 }
 .a_1star{
-  background-position: 220px 73px;
+  background-position: -387px -230px;
   
 }
 .a_1_5star{
   background-position: 220px 73px;
 }
 .a_2star{
-  background-position: 220px 73px;
+  background-position: -96px -135px;
 }
 .a_2_5start{
   background-position: 220px 73px;
 }
 .a_3star{
-  background-position: 220px 73px;
+  background-position: -290px -183px;
 }
 .a_3_5star{
   background-position: 220px 73px;
 }
 .a_4star{
-  background-position: 220px 73px;
+  background-position: 0px -87px !important; 
 }
 .a_4_5star{
   background-position: -389px -206px
 }
 .a_5star{
-  background-position: -100px -110px;
+  background-position: -96px -110px;
+}
+
+.avgCustRev ul span.startRat{
+  height:20px;
+  width: 100px;
+}
+.searchAside a:hover{
+  color:orange !important;
+}
+.searchAside a:focus{
+  box-shadow: none !important;
 }
 /************************** Search End  *******************************/
