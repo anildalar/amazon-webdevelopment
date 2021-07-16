@@ -13,7 +13,7 @@ class Layout extends Component {
     render() {
         return (
             <React.Fragment>
-                <div style={{width:'100%'}}>
+                <div className="bgColor" style={{width:'100%'}}>
                     <Header></Header>
                     {this.props.children}
                     <Footer></Footer>

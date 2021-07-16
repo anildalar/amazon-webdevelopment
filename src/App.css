@@ -1,3 +1,9 @@
+/******************* Layout Start ********************/
+.bgColor{
+  background:#eaeded !important;
+}
+/******************* Layout End ********************/
+
 .amznBtn{
   /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
   background-image:-webkit-linear-gradient(top,#faebc8 0%,#faebc8 5% ,#f7dea1 5%,#f0c14c) !important;
@@ -559,11 +565,8 @@ footer{
 /************************** Search End  *******************************/
 
 /************************** Cart Start  *******************************/
-.cartHeader{
-  height: 404px;
-}
-.cartFooter{
-  height: 300px;
+.cartContainer a{
+  color:#007185 !important;
 }
 
 /************************** Cart End  *******************************/
