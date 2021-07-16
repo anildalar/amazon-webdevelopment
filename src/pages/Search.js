@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faList, faTh } from '@fortawesome/free-solid-svg-icons';
 
 /**
 * @author
@@ -9,8 +11,14 @@ import Layout from '../components/Layout'
 //This is a class Componet
 class Search extends Component {
   //1. Property
+  //Js OBject can Contain Nexted object
   state = {
-    rating: 'a_4_5star'
+    rating: 'a_4_5star',
+    view:{
+        r:100,
+        col1:3,
+        col2:9
+    }
   }
 
   //2. Constructor
@@ -19,6 +27,27 @@ class Search extends Component {
   }
 
   //3. Method
+  //Fat arrow function es6
+  showGridView = ()=>{
+    //alert('ok from show Grid view');
+    this.setState({
+      view:{
+          r:'25 float-start',
+          col1:12,
+          col2:12
+      }
+  });
+}
+  showListView = ()=>{
+   // alert('ok from show List view');
+    this.setState({
+      view:{
+        r:100,
+        col1:3,
+        col2:9
+      }
+    });
+  }
   render() {
     return (
       <Layout>
@@ -163,6 +192,14 @@ class Search extends Component {
               </div>
             </div>
             <div className="col-9 p-4 border-start">
+              <div className="">
+                <button className="btn btn-sm float-end" onClick={this.showListView}>
+                  <FontAwesomeIcon icon={faList} />
+                </button>
+                <button className="btn btn-sm float-end" onClick={this.showGridView}>
+                  <FontAwesomeIcon icon={faTh} />
+                </button>
+              </div>
               <div className="a_srch_FilterTop border-top border-bottom pt-3 pb-3">
                 <h2>Filter by price</h2>
                 <ul className="nav">
@@ -184,13 +221,65 @@ class Search extends Component {
                 </ul>
               </div>
               <div className="a_srch_ProdResult  pt-4 pb-4">
-                <div className="row m-0 w-100 border-top border-bottom">
-                  <div className="col-3 p-3">
+                <div className={'row m-0 border-top border-bottom w-'+this.state.view.r}>
+                  <div className={'p-3 col-'+this.state.view.col1}>
                     <a href="#">
                       <img className="img-fluid" src="https://m.media-amazon.com/images/I/4189ZMqGFIS._AC_UY218_.jpg" />
                     </a>
                   </div>
-                  <div className="col-9 p-3">
+                  <div className={'p-3 col-'+this.state.view.col2}>
+                    <h5><a href="#" className="text-decoration-none text-dark">Dell Inspiron 3505 15.6" FHD Display Laptop (R5-3450U / 8GB / 1TB + 256Gb SSD / Vega Graphics / Win 10 + MSO / Accent Black) D560431WIN9B</a>ss</h5>
+                    <p>
+                      <a href="#" className={'a_3start d-block sprtSht ' + this.state.rating}></a>
+                    </p>
+                  </div>
+                </div>
+                <div className={'row m-0 border-top border-bottom w-'+this.state.view.r}>
+                  <div className={'p-3 col-'+this.state.view.col1}>
+                    <a href="#">
+                      <img className="img-fluid" src="https://m.media-amazon.com/images/I/4189ZMqGFIS._AC_UY218_.jpg" />
+                    </a>
+                  </div>
+                  <div className={'p-3 col-'+this.state.view.col2}>
+                    <h5><a href="#" className="text-decoration-none text-dark">Dell Inspiron 3505 15.6" FHD Display Laptop (R5-3450U / 8GB / 1TB + 256Gb SSD / Vega Graphics / Win 10 + MSO / Accent Black) D560431WIN9B</a>ss</h5>
+                    <p>
+                      <a href="#" className={'a_3start d-block sprtSht ' + this.state.rating}></a>
+                    </p>
+                  </div>
+                </div>
+                <div className={'row m-0 border-top border-bottom w-'+this.state.view.r}>
+                  <div className={'p-3 col-'+this.state.view.col1}>
+                    <a href="#">
+                      <img className="img-fluid" src="https://m.media-amazon.com/images/I/4189ZMqGFIS._AC_UY218_.jpg" />
+                    </a>
+                  </div>
+                  <div className={'p-3 col-'+this.state.view.col2}>
+                    <h5><a href="#" className="text-decoration-none text-dark">Dell Inspiron 3505 15.6" FHD Display Laptop (R5-3450U / 8GB / 1TB + 256Gb SSD / Vega Graphics / Win 10 + MSO / Accent Black) D560431WIN9B</a>ss</h5>
+                    <p>
+                      <a href="#" className={'a_3start d-block sprtSht ' + this.state.rating}></a>
+                    </p>
+                  </div>
+                </div>
+                <div className={'row m-0 border-top border-bottom w-'+this.state.view.r}>
+                  <div className={'p-3 col-'+this.state.view.col1}>
+                    <a href="#">
+                      <img className="img-fluid" src="https://m.media-amazon.com/images/I/4189ZMqGFIS._AC_UY218_.jpg" />
+                    </a>
+                  </div>
+                  <div className={'p-3 col-'+this.state.view.col2}>
+                    <h5><a href="#" className="text-decoration-none text-dark">Dell Inspiron 3505 15.6" FHD Display Laptop (R5-3450U / 8GB / 1TB + 256Gb SSD / Vega Graphics / Win 10 + MSO / Accent Black) D560431WIN9B</a>ss</h5>
+                    <p>
+                      <a href="#" className={'a_3start d-block sprtSht ' + this.state.rating}></a>
+                    </p>
+                  </div>
+                </div>
+                <div className={'row m-0 border-top border-bottom w-'+this.state.view.r}>
+                  <div className={'p-3 col-'+this.state.view.col1}>
+                    <a href="#">
+                      <img className="img-fluid" src="https://m.media-amazon.com/images/I/4189ZMqGFIS._AC_UY218_.jpg" />
+                    </a>
+                  </div>
+                  <div className={'p-3 col-'+this.state.view.col2}>
                     <h5><a href="#" className="text-decoration-none text-dark">Dell Inspiron 3505 15.6" FHD Display Laptop (R5-3450U / 8GB / 1TB + 256Gb SSD / Vega Graphics / Win 10 + MSO / Accent Black) D560431WIN9B</a>ss</h5>
                     <p>
                       <a href="#" className={'a_3start d-block sprtSht ' + this.state.rating}></a>
