@@ -20,6 +20,7 @@ class Home extends Component {
                     <div className="a_main1 a_main_top">
                         <Carousel>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/1.jpg"
@@ -27,6 +28,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/2.jpg"
@@ -34,6 +36,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/3.jpg"
@@ -41,6 +44,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/4.jpg"
@@ -48,6 +52,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/5.jpg"
@@ -55,6 +60,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/6.jpg"
@@ -62,6 +68,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/7.jpg"

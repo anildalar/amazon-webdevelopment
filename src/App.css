@@ -18,6 +18,13 @@
   background-color: red;
 }
 /**************************** Home Css Start   *****************************/
+
+.a_main_top .carousel-item{
+ position: relative;
+}
+.Oblend{
+  background: linear-gradient(transparent 20%, #eaeded 70%);
+}
 .a_toplinks{
   height: 265px;
   overflow: hidden;
