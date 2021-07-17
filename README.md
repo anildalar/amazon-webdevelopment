@@ -14,3 +14,5 @@
 <div>ACCOUNT NO   :  <strong>510101007218549</strong></div>
 <div>IFSC CODE    :  <strong>CORP0001065</strong></div>
 <div>SWIFT CODE   :  <strong>CORPINBB290</strong></div>
+
+<a href="https://youtu.be/BsFC_6VREWA" target="_blank">Visit Video Tutorial</a>
