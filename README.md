@@ -3,7 +3,11 @@
 <p><strong>PayPal :</strong> <a href="https://paypal.me/dollorinfotech" rel="nofollow">https://paypal.me/dollorinfotech</a></p>
 <p><strong>Bitcoin :</strong> <code>39acNNrHrCXswvqXrmwV2Tn4SZcp9EUi1P</code></p>
 <br><br>
+<div>GooglePay <span>9584207606</span> </div>
+<div>PhonePay  <span>7999452711</span></div>
+<br><br>
 
+<h3>For Bank Transfer/Wire</h3>
 <div>BANK NAME    :  <strong>CORPORATION BANK</strong></div> 
 <div>ACCOUNT NAME :  <strong>DOLLOR INFOTECH</strong></div>
 <div>ACCOUNT TYPE :  <strong>CURRENT</strong></div> 
