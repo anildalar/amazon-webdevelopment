@@ -2,10 +2,10 @@
 
 <p><strong>PayPal :</strong> <a href="https://paypal.me/dollorinfotech" rel="nofollow">https://paypal.me/dollorinfotech</a></p>
 <p><strong>Bitcoin :</strong> <code>39acNNrHrCXswvqXrmwV2Tn4SZcp9EUi1P</code></p>
-<br><br>
+<br>
 <div>GooglePay <strong>9584207606</strong> </div>
 <div>PhonePay  <strong>7999452711</strong></div>
-<br><br>
+<br>
 
 <h3>For Bank Transfer/Wire</h3>
 <div>BANK NAME    :  <strong>CORPORATION BANK</strong></div> 
@@ -14,5 +14,5 @@
 <div>ACCOUNT NO   :  <strong>510101007218549</strong></div>
 <div>IFSC CODE    :  <strong>CORP0001065</strong></div>
 <div>SWIFT CODE   :  <strong>CORPINBB290</strong></div>
-<br><br>
+<br>
 <a href="https://youtu.be/BsFC_6VREWA" target="_blank">Visit Video Tutorial</a>
