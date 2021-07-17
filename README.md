@@ -2,11 +2,11 @@
 
 <p><strong>PayPal :</strong> <a href="https://paypal.me/dollorinfotech" rel="nofollow">https://paypal.me/dollorinfotech</a></p>
 <p><strong>Bitcoin :</strong> <code>39acNNrHrCXswvqXrmwV2Tn4SZcp9EUi1P</code></p>
+<br><br>
 
-
-<p>BANK NAME    :  <strong>CORPORATION BANK</strong></p> 
-<p>ACCOUNT NAME :  <strong>DOLLOR INFOTECH</strong></p>
-<p>ACCOUNT TYPE :  <strong>CURRENT</strong></p> 
-<p>ACCOUNT NO   :  <strong>510101007218549</strong></p>
-<p>IFSC CODE    :  <strong>CORP0001065</strong></p>
-<p>SWIFT CODE   :  <strong>CORPINBB290</strong></p>
+<div>BANK NAME    :  <strong>CORPORATION BANK</strong></div> 
+<div>ACCOUNT NAME :  <strong>DOLLOR INFOTECH</strong></div>
+<div>ACCOUNT TYPE :  <strong>CURRENT</strong></div> 
+<div>ACCOUNT NO   :  <strong>510101007218549</strong></div>
+<div>IFSC CODE    :  <strong>CORP0001065</strong></div>
+<div>SWIFT CODE   :  <strong>CORPINBB290</strong></div>
