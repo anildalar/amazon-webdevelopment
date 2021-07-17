@@ -568,5 +568,10 @@ footer{
 .cartContainer a{
   color:#007185 !important;
 }
+.cartTabpane .nav-link.active{
+  border-bottom: 2px solid orange !important;
+  background: transparent !important;
+  color:#000 !important;
+}
 
 /************************** Cart End  *******************************/
