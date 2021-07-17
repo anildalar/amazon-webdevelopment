@@ -3,8 +3,8 @@
 <p><strong>PayPal :</strong> <a href="https://paypal.me/dollorinfotech" rel="nofollow">https://paypal.me/dollorinfotech</a></p>
 <p><strong>Bitcoin :</strong> <code>39acNNrHrCXswvqXrmwV2Tn4SZcp9EUi1P</code></p>
 <br><br>
-<div>GooglePay <span>9584207606</span> </div>
-<div>PhonePay  <span>7999452711</span></div>
+<div>GooglePay <strong>9584207606</strong> </div>
+<div>PhonePay  <strong>7999452711</strong></div>
 <br><br>
 
 <h3>For Bank Transfer/Wire</h3>
