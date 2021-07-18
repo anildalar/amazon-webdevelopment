@@ -20,10 +20,10 @@
 /**************************** Home Css Start   *****************************/
 
 .a_main_top .carousel-item{
- position: relative;
+  position: relative;
 }
-.Oblend{
-  background: linear-gradient(transparent 20%, #eaeded 70%);
+.OLay{
+  background-image: linear-gradient(transparent 20%, #EAEDED 70%);
 }
 .a_toplinks{
   height: 265px;

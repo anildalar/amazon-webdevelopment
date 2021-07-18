@@ -17,18 +17,17 @@ class Home extends Component {
         return (
             <Layout>
                 <div className="a_main position-relative">
-                    <div className="a_main1 a_main_top">
+                    <div className=" a_main1 a_main_top">
                         <Carousel>
                             <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>                               
                                 <img
                                     className="d-block"
                                     src="./images/slider/1.jpg"
                                     alt="First slide"
                                 />
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
+                            <Carousel.Item>                                
                                 <img
                                     className="d-block"
                                     src="./images/slider/2.jpg"
@@ -36,31 +35,27 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/3.jpg"
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
+                            <Carousel.Item>                                
                                 <img
                                     className="d-block"
                                     src="./images/slider/4.jpg"
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
+                            <Carousel.Item>                                
                                 <img
                                     className="d-block"
                                     src="./images/slider/5.jpg"
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
+                            <Carousel.Item>                                
                                 <img
                                     className="d-block"
                                     src="./images/slider/6.jpg"
@@ -68,17 +63,15 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <div className="Oblend w-100 h-100 position-absolute top-0 start-0 "></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/7.jpg"
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
-
                         </Carousel>
                     </div>
-                    <div className="ml-1 position-absolute a_main_bottom">
+                    <div className=" ml-1 position-absolute a_main_bottom">
                         <div className="a_main_bottom_1 row m-0 mb-3">
                             <div className="col p-2">
                                 <div className="a_mainbox1 p-3">
