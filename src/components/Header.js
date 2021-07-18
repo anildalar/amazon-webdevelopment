@@ -99,7 +99,7 @@ class Header extends Component {
                 </style>
                 <div className={'overylay w-100 h-100 ' + this.state.overylay} ></div>
 
-                <button onClick={this.handleNavMenuClose} className={'AllNavMenuCloseBtn btn text-white position-fixed top-0 ' + this.state.AllNavMenuCloseBtn}>X</button>
+                <button onClick={this.handleNavMenuClose} className={'btn-close btn-close-white AllNavMenuCloseBtn position-fixed top-0 ' + this.state.AllNavMenuCloseBtn}></button>
                 <div className={'AllNavMenu h-100 position-fixed top-0 ' + this.state.AllNavMenu}>
                     <div className="AllNavMenuHeader text-white mhcolor p-3">
                         <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
