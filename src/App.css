@@ -18,6 +18,26 @@
   background-color: red;
 }
 /**************************** Home Css Start   *****************************/
+.AllNavMenuCloseBtn{
+  z-index: 100000;
+  left: 370px !important;
+}
+.AllNavMenuBody{
+  height: 720px !important;
+  padding-bottom:110px !important;
+}
+.AllNavMenu{
+  width:365px;
+  z-index: 100000;
+  /* transition: property duration timing-function delay|initial|inherit; */
+  transition: all 0.3s ease-in-out;
+}
+.l366{
+  left:-366px !important;
+}
+.l0{
+  left:0px !important;
+}
 
 .a_main_top .carousel-item{
   position: relative;
@@ -42,7 +62,7 @@
   
   background:rgba(0,0,0,0.5);
   position: fixed;
-  z-index: 10000;
+  z-index: 10010;
   transition: all linear 0.2s; /* I am giving transition for Animation */
 }
 .a_visible{
@@ -184,12 +204,7 @@ button:focus{
   transition: all 0.3s ease-out !important;
   border-radius: 0px !important;
 }
-.l934{
-  left:-934px !important;
-}
-.l433{
-  left:-500px !important;
-}
+
 .a_header_top{
   height: 60px;
   z-index: 1000;

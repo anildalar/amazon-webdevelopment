@@ -26,13 +26,13 @@ const myCustomFont = `
 class Header extends Component {
     //1. properties
     state = {
-        x: 'l934',
+        AllNavMenu: 'l366',
         y: '',
         z: '',
         overylay: 'a_invisible',
         show: false,
         showCountryModal: false,
-        showAllModal: false
+        AllNavMenuCloseBtn: 'd-none'
     }
     //2. constructor
     constructor(props) {
@@ -54,12 +54,6 @@ class Header extends Component {
 
         }
     }
-    closemodal = () => {
-        this.setState({ x: 'l934' });
-    }
-    handleModal = () => {
-        this.setState({ x: 'l433' })
-    }
     formHandle = () => {
         if (this.state.z === 'formboder') {
             this.setState({ z: '' })
@@ -75,19 +69,15 @@ class Header extends Component {
     overylay = () => {
         this.setState({ overylay: 'a_visible' });
     }
-
+    handleNavMenu = () => {
+        this.setState({ AllNavMenu: 'l0', AllNavMenuCloseBtn: 'd-block', overylay: 'a_visible' });
+    }
+    handleNavMenuClose = () => {
+        this.setState({ AllNavMenu: 'l366', AllNavMenuCloseBtn: 'd-none', overylay: 'a_invisible' });
+    }
     //3. Method
     render() {
         //overlay 
-
-        //Fat Arrow Function
-        const handleShow3 = () => {
-            this.setState({ showAllModal: true });
-        }
-        const handleClose3 = () => {
-            this.setState({ showAllModal: false });
-        }
-
 
         const handleClose2 = () => {
             this.setState({ showCountryModal: false });
@@ -108,12 +98,13 @@ class Header extends Component {
                     {myCustomFont}
                 </style>
                 <div className={'overylay w-100 h-100 ' + this.state.overylay} ></div>
-                <Modal className={'headermodal h-100 '} show={this.state.showAllModal} onHide={handleClose3} animation={false}  >
-                    <Modal.Header className="text-white mhcolor">
+
+                <button onClick={this.handleNavMenuClose} className={'AllNavMenuCloseBtn btn text-white position-fixed top-0 ' + this.state.AllNavMenuCloseBtn}>X</button>
+                <div className={'AllNavMenu h-100 position-fixed top-0 ' + this.state.AllNavMenu}>
+                    <div className="AllNavMenuHeader text-white mhcolor p-3">
                         <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
-                        <button onClick={this.closemodal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </Modal.Header>
-                    <Modal.Body className="ps-0 pe-0 pt-2 pb-2">
+                    </div>
+                    <div className="AllNavMenuBody overflow-scroll bg-white ps-0 pe-0 pt-2">
                         <h5 className="fw-bolder ps-4">Trending</h5>
                         <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
                             <li className="nav-item">
@@ -192,8 +183,8 @@ class Header extends Component {
                                 <a className="nav-link" href="#">Signin</a>
                             </li>
                         </ul>
-                    </Modal.Body>
-                </Modal>
+                    </div>
+                </div>
                 <header>
                     <div className={'a_header_top p-1 w-100 ' + this.state.y}>
                         <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
@@ -356,7 +347,7 @@ class Header extends Component {
                     <div className="a_header_bottom">
                         <ul className="nav mt-1 ms-2 float-start">
                             <li className="nav-item">
-                                <a onClick={handleShow3} className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
+                                <a onClick={this.handleNavMenu} className="nav-link" href="#"><FontAwesomeIcon icon={faBars} /> All</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Best Seller</a>
