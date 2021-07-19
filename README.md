@@ -15,4 +15,4 @@
 <div>IFSC CODE    :  <strong>CORP0001065</strong></div>
 <div>SWIFT CODE   :  <strong>CORPINBB290</strong></div>
 <br>
-<a href="https://youtu.be/BsFC_6VREWA" target="_blank">Visit Video Tutorial</a>
+<a href="https://www.youtube.com/playlist?list=PL_kVwOdi-YKRr_CsbcYVv08GE5zAa5TQW" target="_blank">Visit Video Tutorial</a>
