@@ -15,6 +15,7 @@ import Checkout from './pages/Checkout';
 import SignIn from './pages/SignIn';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
+import Delivery from './pages/Delivery';
 /**
 * @author
 * @class App
@@ -43,6 +44,7 @@ class App extends Component {
         <Route path="/search" component={ Search }></Route>
         <Route path="/cart" component={ Cart }></Route>
         <Route path="/checkout" component={ Checkout }></Route>
+        <Route path="/delivery" component={ Delivery }></Route>
       </Router>
     )
   }
