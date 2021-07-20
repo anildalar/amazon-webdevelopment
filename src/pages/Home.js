@@ -17,7 +17,7 @@ class Home extends Component {
         return (
             <Layout>
                 <div className="a_main position-relative">
-                    <div className=" a_main1 a_main_top">
+                    <div className="a_main1 a_main_top">
                         <Carousel>
                             <Carousel.Item>
                                 <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>                               

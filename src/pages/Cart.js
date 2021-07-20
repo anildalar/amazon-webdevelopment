@@ -238,17 +238,33 @@ class Cart extends Component {
                                     </label>
                                 </div>
                                 <button className="mb-3 mt-3 btn btn-warning btn-sm w-100">Procceed to Buy</button>
-                                <p className="border">
-                                    <a className="btn btn-light border-0 w-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                        EMI Available
-                                    </a>
-                                    <div className="collapse border-0" id="collapseExample">
-                                        <div className="card card-body border-0">
-                                        Your order qualifies for EMI with valid credit cards (not available on purchase of Gold, Jewelry, Gift cards and Amazon pay balance top up). Learn more
+                                <div className="accordion" id="accordionExample">
+                                    <div className="accordion-item border rounded-0 ">
+                                        <h2 className="accordion-header border-0" id="headingOne">
+                                            <button className="accordion-button bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            EMI Available
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div className="accordion-body">
+                                                <p> Your order qualifies for EMI with valid credit cards (not available on purchase of Gold, Jewelry, Gift cards and Amazon pay balance top up). Learn more</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </p>
-
+                                </div>                                
+                            </div>
+                            <div className="more_itm_to_exp bg-white border rounded-3 p-3">
+                                <h6>More items to explore</h6>
+                                <div className="row m-0">
+                                    <div className="col-5 p-0">
+                                        <img className="img-fluid w-100" src="https://images-eu.ssl-images-amazon.com/images/I/61UXezWyusL._AC_UL100_SR100,76_.jpg" />
+                                    </div>
+                                    <div className="col-7 p-0">
+                                        <a href="#">Vamsha-Nature-Care</a>
+                                        <span className="text-danger d-block">₹198.00</span>
+                                        <button className="btn amznBtn p-0 rounded-3">Add to Cart</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
