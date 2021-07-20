@@ -614,5 +614,14 @@ footer{
 }
 .a_del_main{
 }
+.a_del_sel_del{
+}
+.a_del_addr{
+  height: 320px;
+}
+.a_del_addr_gradient{
+  height: 20px;
+  background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.03),#fff);
+}
 
 /************************** Delivery End  *******************************/
