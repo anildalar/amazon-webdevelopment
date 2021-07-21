@@ -30,3 +30,5 @@
 <div>SWIFT CODE   :  <strong>CORPINBB290</strong></div>
 <br>
 <a href="https://www.youtube.com/playlist?list=PL_kVwOdi-YKRr_CsbcYVv08GE5zAa5TQW" target="_blank">Visit Video Tutorial</a>
+
+<div>For Any Business Related Quries oklabs.in@gmail.com, dollorinfotech@gmail.com</div>

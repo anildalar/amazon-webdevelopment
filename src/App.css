@@ -1,3 +1,7 @@
+input:focus,button:focus{
+  box-shadow: none !important;
+}
+
 /******************* Layout Start ********************/
 .bgColor{
   background:#eaeded !important;
@@ -138,9 +142,6 @@ header{
 .a_signin_model{
   display: block !important;
 }
-button:focus{
-  box-shadow: none !important;
-}
 
 .mhul li a:hover{
   background: #eaeded;
@@ -163,7 +164,6 @@ button:focus{
 }
 .hform input:focus{
   border:none !important;
-  box-shadow: none !important;
 }
 .a_ht_countrydd_btn:hover > div {
   /* Step 2 */
@@ -476,7 +476,6 @@ footer{
 }
 .havQInput:focus{
   border:none !important;
-  box-shadow: none !important;
 }
 /*
 .havQForm:focus{
@@ -581,9 +580,6 @@ footer{
 .searchAside a:hover{
   color:orange !important;
 }
-.searchAside a:focus{
-  box-shadow: none !important;
-}
 /************************** Search End  *******************************/
 
 /************************** Cart Start  *******************************/
@@ -630,3 +626,12 @@ footer{
 }
 
 /************************** Delivery End  *******************************/
+/************************** Order History Start  *******************************/
+.a_odr_his_main{
+  height: 1370px;
+}
+.a_ordhis_breadcrumb{
+  --bs-breadcrumb-divider: '>'
+}
+
+/************************** Order History End  *******************************/
