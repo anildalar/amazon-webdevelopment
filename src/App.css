@@ -1,5 +1,18 @@
-input:focus,button:focus{
+input:focus,button:focus,select:focus{
   box-shadow: none !important;
+  border:1px solid orange !important;
+}
+.bgLight{
+  background: #f0f2f2 !important;
+}
+.cartTabpane .nav-link.active{
+  border-bottom: 2px solid orange !important;
+  background: transparent !important;
+  color:#000 !important;
+}
+.amznBtn{
+  /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+  background-image:-webkit-linear-gradient(top,#faebc8 0%,#faebc8 5% ,#f7dea1 5%,#f0c14c) !important;
 }
 
 /******************* Layout Start ********************/
@@ -8,10 +21,7 @@ input:focus,button:focus{
 }
 /******************* Layout End ********************/
 
-.amznBtn{
-  /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
-  background-image:-webkit-linear-gradient(top,#faebc8 0%,#faebc8 5% ,#f7dea1 5%,#f0c14c) !important;
-}
+
 
 .r_aside_pannel{
   width:8%;
@@ -454,11 +464,6 @@ footer{
 .a_prodVideoBoxModal a{
   color:#333;
 }
-.a_prodVideoBoxModal .nav-link.active{
-  border-bottom: 2px solid orange;
-  background: transparent !important;
-  color:#000 !important;
-}
 .a_dtl_prodVideBox a{
   border:2px solid #d5dbdb !important;
 }
@@ -586,11 +591,7 @@ footer{
 .cartContainer a{
   color:#007185 !important;
 }
-.cartTabpane .nav-link.active{
-  border-bottom: 2px solid orange !important;
-  background: transparent !important;
-  color:#000 !important;
-}
+
 .emptyCartGuestUserBtn button{
   box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
 }

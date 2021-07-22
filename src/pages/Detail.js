@@ -56,7 +56,7 @@ class Detail extends Component {
                     <div className="modal-dialog modal-xl">
                         <div className="modal-content">
                             <div className="modal-header p-0 pt-4 prodVideoBoxModalHeader mx-auto">
-                                <ul className="nav nav-pills">
+                                <ul className="nav nav-pills cartTabpane">
                                     <li className="nav-item">
                                         <a className="nav-link active rounded-0" data-bs-toggle="pill" href="#prodVideos">VIDEOS</a>
                                     </li>
