@@ -8,7 +8,9 @@ import PropTypes from 'prop-types'
 
 class Delivery extends Component {
     //1. Property
-    state = {}
+    state = {
+        
+    }
 
     //2. Constructor
     constructor(props) {
@@ -19,6 +21,7 @@ class Delivery extends Component {
     render() {
         return (
             <React.Fragment>
+               
                 <div className="container p-0 delivery">
                     <header className="d-flex align-items-center">
                         <img className="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/G/31/x-locale/checkout/checkout-spc-items-banner._CB485947700_.gif" />
