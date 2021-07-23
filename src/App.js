@@ -17,6 +17,7 @@ import Register from './pages/Register';
 import Cart from './pages/Cart';
 import Delivery from './pages/Delivery';
 import OrderHistroy from './pages/OrderHistroy';
+import Wishlist from './pages/Wishlist';
 /**
 * @author
 * @class App
@@ -47,6 +48,7 @@ class App extends Component {
         <Route path="/checkout" component={ Checkout }></Route>
         <Route path="/delivery" component={ Delivery }></Route>
         <Route path="/order_history" component={ OrderHistroy }></Route>
+        <Route path="/wishlist" component={ Wishlist }></Route>
       </Router>
     )
   }

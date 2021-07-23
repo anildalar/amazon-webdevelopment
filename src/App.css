@@ -636,5 +636,33 @@ footer{
 }
 
 /************************** Order History End  *******************************/
+/************************** Wishlist Start  *******************************/
+.a_wishlist_main{
+  height: 1250px
+}
+.wishl_t1{
+  height: 70px;
+}
+.wishl_t2{
+  height: 60px;
+}
+.wishlist_input{
+  /* Step 1 */
+  width: 173px;
+  /* transition: property duration timing-function delay|initial|inherit; */
+  transition: all 2s linear;
+}
+.wishlist_input:focus{
+  /* Step 2 */
+  width: 250px;
+}
+.wisLPro{
+  height: 270px;
+}
+.wisLProBorderblack{
+  border-top:1px solid #000;
+  border-bottom:1px solid #000;
+}
+/************************** Wishlist End  *******************************/
 
 
