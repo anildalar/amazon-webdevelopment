@@ -18,6 +18,7 @@ import Cart from './pages/Cart';
 import Delivery from './pages/Delivery';
 import OrderHistroy from './pages/OrderHistroy';
 import Wishlist from './pages/Wishlist';
+import Account from './pages/Account';
 /**
 * @author
 * @class App
@@ -46,6 +47,7 @@ class App extends Component {
         <Route path="/search" component={ Search }></Route>
         <Route path="/cart" component={ Cart }></Route>
         <Route path="/checkout" component={ Checkout }></Route>
+        <Route path="/account" component={ Account }></Route>
         <Route path="/delivery" component={ Delivery }></Route>
         <Route path="/order_history" component={ OrderHistroy }></Route>
         <Route path="/wishlist" component={ Wishlist }></Route>

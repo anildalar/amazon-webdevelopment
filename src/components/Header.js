@@ -1,9 +1,17 @@
+
+//1. Import Area
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Modal } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCaretDown, faCartPlus, faChevronDown, faChevronRight, faMapMarkerAlt, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags'
+
+//1. import { NamedImport } from 'somelibrary';
+//2. import defaultImport from 'somelibrary';
+
+import { Link,NavLink } from 'react-router-dom';
 
 //import something from something
 import Ember from '../assets/fonts/ember/AmazonEmber_Rg.ttf';
@@ -187,9 +195,9 @@ class Header extends Component {
                 </div>
                 <header>
                     <div className={'a_header_top p-1 w-100 ' + this.state.y}>
-                        <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
+                        <NavLink to="/" className="me-1 btn h-100" style={{ 'width': '10%' }}>
                             <img className="img-fluid" src="./logo.png" />
-                        </button>
+                        </NavLink>
                         <button className="text-start row m-0 lh-1 text-white fs-6 me-1 btn h-100" style={{ 'width': '10%' }}>
                             <div className="col-2 p-0"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
                             <div className="col-10 p-0 fw-bolder">
@@ -268,8 +276,8 @@ class Header extends Component {
                             <div className="a_ht_signin_model position-absolute rounded-1 bg-white border">
                                 <div className="arrow-up position-absolute a_au_a_ht_signin_model"></div>
                                 <div className="text-center border-bottom">
-                                    <button className="btn btn-warning w-50 mt-3">Sign in</button>
-                                    <p className="text-dark">New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+                                    <Link to="/signin" className="btn btn-warning w-50 mt-3">Sign in</Link>
+                                    <p className="text-dark">New customer? <Link to="/register" className="btn btn-link">Start here.</Link></p>
                                 </div>
                                 <div className="row m-0">
                                     <div className="col p-2">
@@ -299,13 +307,13 @@ class Header extends Component {
                                         <h5 className="text-dark m-0">Your Account</h5>
                                         <ul className="nav flex-column">
                                             <li className="nav-item">
-                                                <a className="nav-link" href="#">YourAccount</a>
+                                                <Link className="nav-link" to="/account">Your Account</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="#">Your Orders</a>
+                                                <Link className="nav-link" to="/order_history">Your Orders</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="#">Your Wish List</a>
+                                                <Link className="nav-link" to="/wishlist">Your Wish List</Link>
                                             </li>
                                             <li className="nav-item">
                                                 <a className="nav-link" href="#">Your Recommendations</a>
@@ -340,9 +348,9 @@ class Header extends Component {
                             <div>Returns</div>
                             <span className="fw-bolder">&amp; Orders</span>
                         </button>
-                        <button className="text-white btn h-100" style={{ 'width': '8%' }}>
+                        <Link to="/cart" className="text-white btn h-100" style={{ 'width': '8%' }}>
                             <FontAwesomeIcon className="fs-3" icon={faCartPlus} /> Cart
-                        </button>
+                        </Link>
                     </div>
                     <div className="a_header_bottom">
                         <ul className="nav mt-1 ms-2 float-start">

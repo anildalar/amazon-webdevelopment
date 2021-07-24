@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 
+//1. import { NamedImport } from 'somelibrary';
+//2. import defaultImport from 'somelibrary';
+
+import { Link,NavLink } from 'react-router-dom';
+
 /**
 * @author
 * @class Cart
@@ -237,7 +242,7 @@ class Cart extends Component {
                                         This order contains a gift
                                     </label>
                                 </div>
-                                <button className="mb-3 mt-3 btn btn-warning btn-sm w-100">Procceed to Buy</button>
+                                <Link to="/checkout" className="mb-3 mt-3 btn btn-warning btn-sm w-100">Procceed to Buy</Link>
                                 <div className="accordion" id="accordionExample">
                                     <div className="accordion-item border rounded-0 ">
                                         <h2 className="accordion-header border-0" id="headingOne">
