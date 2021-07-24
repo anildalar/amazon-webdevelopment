@@ -34,6 +34,45 @@ class Header extends Component {
         showCountryModal: false,
         AllNavMenuCloseBtn: 'd-none'
     }
+    sty = `
+    .home_spritesheet{
+        background: url(https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+      }
+      .h_amazon_pos{
+        background-position: -9px -38px;
+      }
+       .h_amz_con{
+        width:100px;
+        height:42px;
+      }
+      .h_loc_con_pos{
+        width: 21px;
+        height:34px;
+        background-position: -71px -379px;
+      }
+      .foot_spritesheet{
+        background-image: url('https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png');
+      }
+      .a_flag_pos{
+        background-position: 0 -166px;
+        width:24px;
+    height: 18px;
+      }
+      .a_arrow_pos{
+        background-position: -181px -334px  !important;
+        width: 16px;
+        height: 17px;
+      }
+      .cart_con_pos{
+        background-position: -10px -340px !important;
+        width: 38px;
+        height: 26px;
+      }
+      .a_header_top button {
+          font-size:15px !important;
+      }
+    `;
+
     //2. constructor
     constructor(props) {
         super(props);
@@ -96,10 +135,11 @@ class Header extends Component {
             <React.Fragment>
                 <style>
                     {myCustomFont}
+                    {this.sty}
                 </style>
                 <div className={'overylay w-100 h-100 ' + this.state.overylay} ></div>
 
-                <button onClick={this.handleNavMenuClose} className={'btn-close btn-close-white AllNavMenuCloseBtn position-fixed top-0 ' + this.state.AllNavMenuCloseBtn}></button>
+                <button onClick={this.handleNavMenuClose} className={'btn-close btn-close-white AllNavMenuCloseBtn  position-fixed top-0 ' + this.state.AllNavMenuCloseBtn}></button>
                 <div className={'AllNavMenu h-100 position-fixed top-0 ' + this.state.AllNavMenu}>
                     <div className="AllNavMenuHeader text-white mhcolor p-3">
                         <h5 className="modal-title " id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
@@ -186,20 +226,20 @@ class Header extends Component {
                     </div>
                 </div>
                 <header>
-                    <div className={'a_header_top p-1 w-100 ' + this.state.y}>
-                        <button className="me-1 btn h-100" style={{ 'width': '10%' }}>
-                            <img className="img-fluid" src="./logo.png" />
+                    <div className={'a_header_top p-1 w-100 fs-6 ' + this.state.y}>
+                        <button className=" me-1 btn h-100" style={{ 'width': '11%' }}>
+                            <span className=" ms-0 p-0 d-block float-start h_amz_con home_spritesheet  h_amazon_pos" ></span>
+                            <span className="text-white mt-2 pt-1 float-start">.in</span>
                         </button>
-                        <button className="text-start row m-0 lh-1 text-white fs-6 me-1 btn h-100" style={{ 'width': '10%' }}>
-                            <div className="col-2 p-0"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
-                            <div className="col-10 p-0 fw-bolder">
-                                Deliver to Anil
-
-                                <span className="fw-bold d-block"><span className="a_city">Neemuch</span><span className="a_pincode">458441</span></span>
-                            </div>
+                        <button className="text-start mt-1 row m-0 lh-1 text-white fs-6 me-1 btn h-100" style={{ 'width': '13%' }}>
+                            <div className="p-0  ms-3" >Hello</div>
+                            <a className="fw-bold p-0">
+                                <span className=" ms-0  d-block float-start h_loc_con_pos home_spritesheet " ></span>
+                                <span className="text-white d-block  float-start">Select your address</span>
+                            </a>
 
                         </button>
-                        <form className={'bg-white hform  w-50 d-inline-block ' + this.state.z}>
+                        <form style={{ 'width': '45%' }} className={'bg-white hform   d-inline-block ' + this.state.z}>
                             <div className="row m-0">
                                 <div className="col-1 p-0 border-end">
                                     <div className="btn-group" role="group">
@@ -220,8 +260,9 @@ class Header extends Component {
                                 </div>
                             </div>
                         </form>
-                        <button className="a_ht_countrydd_btn btn h-100 p-0 position-relative" style={{ 'width': '4%' }}>
-                            <Flag className="d-inline-block me-1" code={'in'} height="16" /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
+                        <button className="  a_ht_countrydd_btn btn h-100 p-0 position-relative" style={{ 'width': '5%' }}>
+                            <span className="  d-block float-start p-0 foot_spritesheet  a_flag_pos"></span>
+                            <span className="home_spritesheet float-start a_arrow_pos "></span>
                             <div className="text-start p-3 a_ht_countrydd position-absolute bg-white rounded-3 border">
                                 <div className="arrow-up position-absolute a_au_a_ht_countrydd"></div>
                                 <div className="form-check">
@@ -262,7 +303,7 @@ class Header extends Component {
                                 <a href="#" className="btn btn-link">Change country/region</a>
                             </div>
                         </button>
-                        <button onMouseOver={this.overylay} onMouseOut={this.hideOverlay} className="a_ht_signin_model_btn position-relative text-start fs-6 text-white btn h-100" style={{ 'width': '8%' }}>
+                        <button onMouseOver={this.overylay} onMouseOut={this.hideOverlay} className=" ms-1 a_ht_signin_model_btn position-relative text-start fs-6 text-white btn h-100" style={{ 'width': '10%' }}>
                             <div>Hello, Sign in</div>
                             <span className="fw-bolder">Account &amp; Lists</span>
                             <div className="a_ht_signin_model position-absolute rounded-1 bg-white border">
@@ -336,12 +377,13 @@ class Header extends Component {
                                 </div>
                             </div>
                         </button>
-                        <button className="text-start text-white btn h-100" style={{ 'width': '8%' }}>
+                        <button className="text-start text-white btn h-100" style={{ 'width': '7%' }}>
                             <div>Returns</div>
                             <span className="fw-bolder">&amp; Orders</span>
                         </button>
-                        <button className="text-white btn h-100" style={{ 'width': '8%' }}>
-                            <FontAwesomeIcon className="fs-3" icon={faCartPlus} /> Cart
+                        <button className=" ms-1 text-white btn h-100" style={{ 'width': '7%' }}>
+                            <span className="d-block float-start home_spritesheet cart_con_pos"></span>
+                            <span className="float-start">cart</span>
                         </button>
                     </div>
                     <div className="a_header_bottom">
