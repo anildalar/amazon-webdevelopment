@@ -648,15 +648,13 @@ footer{
 }
 .wishlist_input{
   /* Step 1 */
-  width: 173px;
+  padding-right: 0px;
   /* transition: property duration timing-function delay|initial|inherit; */
-  -webkit-transition: width .5s ease;
-   -moz-transition: width .5s ease;
-   transition: width .5s ease;
+  transition: all .1s linear !important;
 }
 .wishlist_input:focus{
   /* Step 2 */
-  width: 250px;
+  padding-right: 100px;
 }
 .wisLPro{
   height: 270px;
@@ -664,6 +662,56 @@ footer{
 .wisLProBorderblack{
   border-top:1px solid #000;
   border-bottom:1px solid #000;
+}
+.a_wishDragImg{
+  cursor: grab !important;
+  width:26px;
+  height: 42px;
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+  background: url("https://m.media-amazon.com/images/G/01/gifts/registries/wishlist/drag_icon._CB485933177_.png") no-repeat !important;
+}
+.a_wish_rat{
+  height: 25px;
+}
+.a_wish_rat > .a_rat{
+  width: 81px;
+}
+.sprtSht2{
+  background-image: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+  background-repeat: no-repeat;
+}
+.ss2_4_5star{
+  background-position:-175px -366px  !important;
+}
+.a_chevDown{
+  width: 15px;
+}
+.ss2_chevDown{
+  background-position:-76px -286px !important;
+}
+.a_wish_rat:hover{
+  cursor: pointer;
+}
+.a_wish_rat:hover .a_wish_rat_progressbox{
+  width:337px;
+  opacity:1;
+  visibility: visible;
+}
+.a_wish_rat_progressbox{
+  width:168px;
+  min-height: 278px;
+  top:35px;
+  left:-130px;
+  opacity:0;
+  visibility:hidden;
+  transition: all 0.1s linear;
+}
+.a_wish_rat_progressbox > .arrow-up{
+  top:0px;
+  left:0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid red;
 }
 /************************** Wishlist End  *******************************/
 
