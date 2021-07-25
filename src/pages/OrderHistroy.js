@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 
 /**
@@ -12,7 +11,6 @@ class OrderHistroy extends Component {
     state = {}
 
     //2. Constructor
-
 
     //3. Method
     render() {

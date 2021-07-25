@@ -1,11 +1,7 @@
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faUser, faChevronRight, faBars, faSearch, faChevronDown, faCartPlus, faStar, faStarAndCrescent, faGlobe, faMoneyBill, faCaretDown } from '@fortawesome/free-solid-svg-icons'
-import Flag from 'react-world-flags';
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 // import something from somelibrary
-import { Button, Carousel, Modal } from 'react-bootstrap';
 
 import { BrowserRouter as Router,Route } from "react-router-dom";
 import Home from './pages/Home';

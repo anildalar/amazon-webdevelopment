@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 /**
 * @author
@@ -11,12 +10,6 @@ class Delivery extends Component {
     state = {
         
     }
-
-    //2. Constructor
-    constructor(props) {
-        super(props);
-    }
-
     //3. Method
     render() {
         return (

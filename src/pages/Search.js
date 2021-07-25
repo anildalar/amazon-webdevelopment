@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList, faTh } from '@fortawesome/free-solid-svg-icons';
@@ -19,11 +18,6 @@ class Search extends Component {
         col1:3,
         col2:9
     }
-  }
-
-  //2. Constructor
-  constructor(props) {
-    super(props);
   }
 
   //3. Method

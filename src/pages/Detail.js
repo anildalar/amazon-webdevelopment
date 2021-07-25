@@ -1,9 +1,6 @@
 //Import Area
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faInfo ,faInfoCircle, faSearch, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 import ReactImageMagnify from 'react-image-magnify';
@@ -27,11 +24,6 @@ class Detail extends Component {
     //1. Property 
     state = {
         prodSrollFix: 'position-relative'
-    }
-
-    //2. Constructor
-    constructor(props) {
-        super(props);
     }
 
     componentDidMount() {

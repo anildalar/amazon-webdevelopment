@@ -2,8 +2,6 @@
 //1. Import Area
 
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { Modal } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCaretDown, faCartPlus, faChevronDown, faChevronRight, faMapMarkerAlt, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags'
@@ -41,10 +39,6 @@ class Header extends Component {
         show: false,
         showCountryModal: false,
         AllNavMenuCloseBtn: 'd-none'
-    }
-    //2. constructor
-    constructor(props) {
-        super(props);
     }
     //3.Method
     componentDidMount() {
@@ -86,20 +80,7 @@ class Header extends Component {
     //3. Method
     render() {
         //overlay 
-
-        const handleClose2 = () => {
-            this.setState({ showCountryModal: false });
-        }
-
-        const handleClose = () => {
-            this.setState({ show: false });
-        }
-        const handleShow = () => {
-            this.setState({ show: true });
-        };
-        const handleShow2 = () => {
-            this.setState({ showCountryModal: true });
-        }
+        
         return (
             <React.Fragment>
                 <style>

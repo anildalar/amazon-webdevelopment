@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 
 //1. import { NamedImport } from 'somelibrary';
 //2. import defaultImport from 'somelibrary';
 
-import { Link,NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 /**
 * @author
