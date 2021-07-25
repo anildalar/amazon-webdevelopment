@@ -24,12 +24,7 @@ import Account from './pages/Account';
 //2. Functional Component
 class App extends Component {
   //1. property
-  //2. constructor
-  constructor(props) {
-    super(props);
-  }
-
-  
+  //2. constructor  
   render() {
     //Fat Arrow Function
         

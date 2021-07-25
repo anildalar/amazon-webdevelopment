@@ -50,7 +50,7 @@ class Cart extends Component {
                                         <div className="row border-top border-bottom m-0">
                                             <div className="col-3 p-2 d-flex align-items-center">
                                                 <div className="form-check">
-                                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                                                     <label className="form-check-label" for="flexCheckChecked"></label>
                                                 </div>
                                                 <a href="#">
@@ -92,8 +92,8 @@ class Cart extends Component {
                                         <div className="row border-top border-bottom m-0">
                                             <div className="col-3 p-2 d-flex align-items-center">
                                                 <div className="form-check">
-                                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                                                    <label className="form-check-label" for="flexCheckChecked"></label>
+                                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                                    <label className="form-check-label"></label>
                                                 </div>
                                                 <a href="#">
                                                     <img className="img-fluid" src="https://m.media-amazon.com/images/I/61Iyd3w+bKL._AC_AA180_.jpg" />

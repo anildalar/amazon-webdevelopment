@@ -249,8 +249,8 @@ class Detail extends Component {
                                     <div className="accordion-item">
                                         <h2 className="accordion-header" id="headingOne">
                                             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                                <label className="form-check-label" for="flexRadioDefault1">
+                                                <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                                <label className="form-check-label" >
                                                     <span className="d-block text-dark">With Exchange</span>
                                                     <span className="d-block text-danger">Up to $ 17,000 off</span>
                                                 </label>
@@ -285,8 +285,8 @@ class Detail extends Component {
                                         <h2 className="accordion-header" id="headingTwo">
                                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                 <div className="form-check">
-                                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                                    <label className="form-check-label" for="flexRadioDefault2">
+                                                    <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                                    <label className="form-check-label" >
                                                         <span className="d-block text-dark">Without Exchange</span>
                                                         <span className="d-block text-danger">₹ 50,000 <span className="text-dark text-decoration-line-through">₹ 80,000</span> </span>
                                                     </label>
@@ -352,15 +352,15 @@ class Detail extends Component {
                         </nav>
                         <p> <FontAwesomeIcon className="text-primary" icon={faInfoCircle} /> One of these items is dispatched sooner than the other.<a href="#">Show details</a></p>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label class="form-check-label">
                                 This item: HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1" (40.9 cms) FHD Gaming Laptop (8GB/1TB HDD + 256GB SSD/Windows 10/MS Office/NVIDIA GTX 1650 4GB/Shadow Black), 16-a0022TX 
                                 <span className="text-danger">₹91,713.00</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label class="form-check-label">
                                 HP 200 Wireless Mouse (Black) <span className="text-danger">₹699.00</span>
                             </label>
                         </div>

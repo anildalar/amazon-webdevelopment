@@ -214,34 +214,34 @@ class Header extends Component {
                             <div className="text-start p-3 a_ht_countrydd position-absolute bg-white rounded-3 border">
                                 <div className="arrow-up position-absolute a_au_a_ht_countrydd"></div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                    <label className="form-check-label" for="flexRadioDefault1">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                    <label className="form-check-label" >
                                         Default radio
                                     </label>
                                 </div>
                                 <hr />
                                 <form>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                        <label className="form-check-label" for="flexRadioDefault1">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
                                             Default radio
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                        <label className="form-check-label" for="flexRadioDefault2">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
                                             Default checked radio
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                        <label className="form-check-label" for="flexRadioDefault1">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
                                             Default radio
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                        <label className="form-check-label" for="flexRadioDefault2">
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
                                             Default checked radio
                                         </label>
                                     </div>

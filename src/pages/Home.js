@@ -156,7 +156,7 @@ class Home extends Component {
                                                     </a>
                                                 </div>
                                                 <div className="col-6 p-0 tbdr">
-                                                    <a href="#" clssName="text-start p-0 rounded-0 btn btn-success w-100 h-100">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn btn-success w-100 h-100">
                                                         <img className="img-fluid" src="./images/main_imgs/2.jpg" />
                                                         Refigerators
                                                     </a>
