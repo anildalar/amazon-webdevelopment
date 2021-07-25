@@ -57,6 +57,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/2.jpg"
@@ -64,6 +65,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/3.jpg"
@@ -71,6 +73,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/4.jpg"
@@ -78,6 +81,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/5.jpg"
@@ -85,6 +89,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/6.jpg"
@@ -92,6 +97,7 @@ class Home extends Component {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
+                                <div className="OLay w-100 h-100 position-absolute top-0 start-0"></div>
                                 <img
                                     className="d-block"
                                     src="./images/slider/7.jpg"
@@ -396,7 +402,7 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="a_main_bottom_3 p-3 bg-white">
+                        <div className="a_main_bottom_3 p-3 bg-white mb-5">
                             <div className="mb-5">
                                 <h3 className="float-start">Today's Deals</h3>
                                 <button type="button" className="float-start btn btn-link text-decoration-none">see all deals</button>
@@ -471,7 +477,7 @@ class Home extends Component {
                                 </Carousel.Item>
                             </Carousel>
                         </div>
-                        <div className="a_main_bottom_4 overflow-hidden p-3 bg-success">
+                        <div className="a_main_bottom_4 overflow-hidden p-3 bg-success mb-3">
                             <div className="mb-5">
                                 <h3 className="float-start">Best Sellers in Computers &amp; Accessories</h3>
                             </div>
@@ -533,6 +539,341 @@ class Home extends Component {
                                 </Carousel.Item>
                             </Carousel>
                         </div>
+                        <div className="a_main_bottom_1 row m-0 mb-3">
+
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5>Gift a smile to your baby</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Soft_toys._SY116_CB667648551_.jpg" />
+                                                        Soft Toys
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Sound_toys._SY116_CB667648551_.jpg" />
+                                                        Sound Toys
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Rattles._SY116_CB667648551_.jpg" />
+                                                        Rattles
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Sorting_toys._SY116_CB667648551_.jpg" />
+                                                        Sorting toys
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner h-100 ">
+                                        <div className="  w-100">
+                                            <h5>Rakhi Store | One stop shop for Gifting  </h5>
+                                            <img className="img-fluid h-75 w-100 " src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Rakhi21/GW/PC_CC1_1x._SY304_CB663387509_.jpg" />
+                                        </div>
+                                        <a href="#" className="btn btn-link">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5>Make your parenting journey easier</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Prenatal_essentials._SY116_CB667655033_.jpg" />
+                                                        Prenatal essentials
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/0-2_years_baby_essentials._SY116_CB667655033_.jpg" />
+                                                        0-2 years baby essentials
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/2-4_years_baby_essentials._SY116_CB667655033_.jpg" />
+                                                        2-4 years baby essentials
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Explore_more._SY116_CB667655033_.jpg" />
+                                                        Explore more
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner h-100 ">
+                                        <div className="  w-100">
+                                            <h5>Effective dishwashing for Indian cooking</h5>
+                                            <img className="img-fluid h-75 w-100 " src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/DW_CC_-_March_379x304._SY304_CB655397356_.jpg" />
+                                        </div>
+                                        <a href="#" className="btn btn-link">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" tbdr a_main_bottom_4 mb-3"></div>
+                        <div className=" tbdr a_main_bottom_4 mb-3"></div>
+                        <div className=" tbdr a_main_bottom_4 mb-3"></div>
+                        <div className="a_main_bottom_1 row m-0 mb-3">
+
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5>For your little one | Amazon Brands &amp; more</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/QC/PC/Rccar_186x116._SY116_CB654408186_.jpg" />
+                                                        Remote control cars &amp; more
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/QC/PC/Softtoys_186x116._SY116_CB654408186_.png" />
+                                                        Soft toys
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/QC/PC/Puzzles_186x116._SY116_CB654408314_.jpg" />
+                                                        Puzzles &amp; educational toys
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/QC/PC/BabyToys_PC_186x116._SY116_CB654408314_.jpg" />
+                                                        Baby Products
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5>Make your Rakhi gifting memorable</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Rakhi21/GW/Smartphones._SY116_CB663361438_.jpg" />
+                                                        Smart phones
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Rakhi21/GW/Alexa_devices._SY116_CB663361433_.jpg" />
+                                                        Alexa devices
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Rakhi21/GW/Electronics._SY116_CB663361433_.jpg" />
+                                                        Electronics
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Rakhi21/GW/Explore_more._SY116_CB663361438_.jpg" />
+                                                        Explore more
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner h-100 ">
+
+                                        <h5>Just Ask Alexa </h5>
+                                        <img className="img-fluid h-75 w-100 " src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/2019/Herotator/MSO/desktop/CC_Echo-dot_1x._SY304_CB445355234_.jpg" />
+
+                                        <a href="#" className="btn btn-link">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5>Food, fitness and WFH essentials | Amazon</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonLaunchpad/Gateway/May/PC/10.Granola-bars_186x116._SY116_CB668532477_.jpg" />
+                                                        breakfast essentials
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonLaunchpad/Gateway/May/PC/2.WFH-essentials_186x116._SY116_CB668532477_.jpg" />
+                                                        WFH essential
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonLaunchpad/Gateway/May/PC/21.Protein-supplements_186x116._SY116_CB668532477_.jpg" />
+                                                        Protin supplements
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonLaunchpad/Gateway/May/PC/22.Fitness-essentials1_186x116._SY116_CB668532477_.jpg" />
+                                                        Fitness essential
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" tbdr a_main_bottom_4 mb-3"></div>
+                        <div className=" tbdr a_main_bottom_4 mb-3"></div>
+                        <div className="a_main_bottom_1 row m-0 mb-3">
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner h-100 ">
+
+                                        <h5>For all your photography needs </h5>
+                                        <img className="img-fluid h-75 w-100 " src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Cameras/MSOs/July/Pc_Card/379x304_pc_card_2._SY304_CB664252703_.jpg" />
+
+                                        <a href="#" className="btn btn-link">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5>At home Grooming &amp; Wellness devices</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/GW/2_1x._SY116_CB664832134_.jpg" />
+                                                        Men's Grooming
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/GW/3_1x._SY116_CB664832134_.jpg" />
+                                                        Women's Grooming
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/GW/4_1x._SY116_CB664832134_.jpg" />
+                                                        Healthcare Devices
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/GW/1_1x._SY116_CB664832134_.jpg" />
+                                                        Massagers
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner w-100 h-100 ">
+                                        <div className=" w-100 ">
+                                            <h5> Trending picks | Amazon Brands &amp; more</h5>
+                                            <div className="row m-0 ">
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GWTransition/1_186x116._SY116_CB433910794_.jpg" />
+                                                        fans ACs &amp; coolers
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GWTransition/3-1-Summer_QC_186x116._SY116_CB429097342_.jpg" />
+                                                        Towels
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 pe-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GWTransition/2_186x116._SY116_CB667536804_.jpg" />
+                                                        Water bottles
+                                                    </a>
+                                                </div>
+                                                <div className="col-6 p-0 ">
+                                                    <a href="#" className="text-start p-0 rounded-0 btn  w-100 h-100">
+                                                        <img className="img-fluid h-75 ps-1" src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/inbaugwsummerpc/xcm_banners_bau_2021_desktop-quadcard-186x116-product-badge-s46op_186x116_in-en._SY116_CB667537191_.jpg" />
+                                                        Light blocking curtains
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" className="btn btn-link text-decoration-none">See More</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="col p-2">
+                                <div className="p_mainbox1 p-3">
+                                    <div className="p_mainbox1_inner h-100 ">
+
+                                        <h5>Fire TV Stick Lite</h5>
+                                        <img className="img-fluid h-75 w-100 " src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonDevices/SMPmso/MSO_CC-_Sheldon._SY304_CB657532823_.jpg" />
+
+                                        <a href="#" className="btn btn-link">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
