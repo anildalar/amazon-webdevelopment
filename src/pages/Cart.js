@@ -242,7 +242,7 @@ class Cart extends Component {
                                     <div className="accordion-item border rounded-0 ">
                                         <h2 className="accordion-header border-0" id="headingOne">
                                             <button className="accordion-button bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            EMI Available
+                                                EMI Available
                                             </button>
                                         </h2>
                                         <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -251,7 +251,7 @@ class Cart extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                             <div className="more_itm_to_exp bg-white border rounded-3 p-3">
                                 <h6>More items to explore</h6>
