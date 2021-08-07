@@ -29,7 +29,7 @@
 <div>ACCOUNT TYPE :  <strong>CURRENT</strong></div> 
 <div>ACCOUNT NO   :  <strong>510101007218549</strong></div>
 <div>IFSC CODE    :  <strong>CORP0001065</strong></div>
-<div>SWIFT CODE   :  <strong>CORPINBB290</strong></div>
+<div>SWIFT CODE   :  <strong>UBININBBSYI</strong></div>
 <br>
 <a href="https://www.youtube.com/playlist?list=PL_kVwOdi-YKRr_CsbcYVv08GE5zAa5TQW" target="_blank">Visit Video Tutorial</a>
 
