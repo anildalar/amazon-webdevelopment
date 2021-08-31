@@ -19,7 +19,7 @@
 <p><strong>My Bitcoin Cash Address:</strong> <code>34zQAsuKQGg2n6MjWQvrHcuDvPcNvPyN2w</code></p>
 <br>
 <div>GooglePay <strong>+91-9584207606</strong> </div>
-<div>PhonePay  <strong>+91-7999452711</strong></div>
+<div>PhonePay  <strong>+91-9584207606</strong></div>
 <br>
 
 <h3>For Bank Transfer/Wire</h3>
