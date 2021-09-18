@@ -182,7 +182,7 @@ class Header extends Component {
                         <button className="text-start row m-0 lh-1 text-white fs-6 me-1 btn h-100" style={{ 'width': '10%' }}>
                             <div className="col-2 p-0"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
                             <div className="col-10 p-0 fw-bolder">
-                                Deliver to Anil
+                                Deliver to Sunil
 
                                 <span className="fw-bold d-block"><span className="a_city">Neemuch</span><span className="a_pincode">458441</span></span>
                             </div>

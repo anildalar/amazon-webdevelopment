@@ -116,7 +116,7 @@ class Home extends Component {
                                                 <FontAwesomeIcon style={{ fontSize: '3em', 'color': '#aab7b7' }} icon={faUserCircle} />
                                             </div>
                                             <div className="col-8">
-                                                <h4 className="m-0">Hi, <span className="custName">Anil</span></h4>
+                                                <h4 className="m-0">Hi, <span className="custName">Sunil</span></h4>
                                                 <span style={{ fontSize: '12px' }}>Customer since 2017</span>
                                             </div>
                                         </div>
