@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCaretDown, faCartPlus, faChevronDown, faChevronRight, faMapMarkerAlt, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags'
 
+import i18n from '../i18n';
+
+import { withTranslation } from 'react-i18next';
+
 //1. import { NamedImport } from 'somelibrary';
 //2. import defaultImport from 'somelibrary';
 
@@ -29,6 +33,7 @@ const myCustomFont = `
 * @class Header
 **/
 
+
 class Header extends Component {
     //1. properties
     state = {
@@ -40,10 +45,16 @@ class Header extends Component {
         showCountryModal: false,
         AllNavMenuCloseBtn: 'd-none'
     }
+    
     //3.Method
+    componentWillMount(){
+        //before the page load
+        i18n.changeLanguage(localStorage.getItem('curLang'));
+    }
     componentDidMount() {
         //this is the life cyle method that will be called when page is loaded successfully
         window.addEventListener('scroll', this.handleScroll);
+        
     }
     handleScroll = () => {
         /* console.log('ok ' + window.scrollY); */
@@ -78,9 +89,14 @@ class Header extends Component {
         this.setState({ AllNavMenu: 'l366', AllNavMenuCloseBtn: 'd-none', overylay: 'a_invisible' });
     }
     //3. Method
+    changeLang = (l) =>{ //l formal argument
+        return ()=>{
+            i18n.changeLanguage(l);
+            localStorage.setItem('curLang',l);
+        }
+    }
     render() {
-        //overlay 
-        
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <style>
@@ -213,36 +229,54 @@ class Header extends Component {
                             <Flag className="d-inline-block me-1" code={'in'} height="16" /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} />
                             <div className="text-start p-3 a_ht_countrydd position-absolute bg-white rounded-3 border">
                                 <div className="arrow-up position-absolute a_au_a_ht_countrydd"></div>
-                                <div className="form-check">
+                                <div className="form-check" onClick={ this.changeLang('en') }>
                                     <input className="form-check-input" type="radio" name="flexRadioDefault"  />
                                     <label className="form-check-label" >
-                                        Default radio
+                                    English - EN
                                     </label>
                                 </div>
                                 <hr />
                                 <form>
-                                    <div className="form-check">
+                                    <div className="form-check" onClick={ this.changeLang('hi') }>
                                         <input className="form-check-input" type="radio" name="flexRadioDefault"  />
                                         <label className="form-check-label" >
-                                            Default radio
+                                            हिंदी - HI
                                         </label>
                                     </div>
-                                    <div className="form-check">
+                                    <div className="form-check" onClick={ this.changeLang('ta') }>
                                         <input className="form-check-input" type="radio" name="flexRadioDefault"  />
                                         <label className="form-check-label" >
-                                            Default checked radio
+                                            - TA
                                         </label>
                                     </div>
-                                    <div className="form-check">
+                                    <div className="form-check" onClick={ this.changeLang('te') }>
                                         <input className="form-check-input" type="radio" name="flexRadioDefault"  />
                                         <label className="form-check-label" >
-                                            Default radio
+                                        ుు - TE
                                         </label>
                                     </div>
-                                    <div className="form-check">
+                                    <div className="form-check" onClick={ this.changeLang('kn') }>
                                         <input className="form-check-input" type="radio" name="flexRadioDefault"  />
                                         <label className="form-check-label" >
-                                            Default checked radio
+                                        ನನ - KN
+                                        </label>
+                                    </div>
+                                    <div className="form-check" onClick={ this.changeLang('ml') }>
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
+                                        - ML
+                                        </label>
+                                    </div>
+                                    <div className="form-check" onClick={ this.changeLang('mr') }>
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
+                                        Marathi - MR
+                                        </label>
+                                    </div>
+                                    <div className="form-check" onClick={ this.changeLang('bn') }>
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  />
+                                        <label className="form-check-label" >
+                                        াংলা - BN
                                         </label>
                                     </div>
                                 </form>
@@ -342,7 +376,7 @@ class Header extends Component {
                                 <a className="nav-link" href="#">Best Seller</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Mobile</a>
+                                <a className="nav-link" href="#">{ t('mobile') }</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Electronics</a>
@@ -400,6 +434,5 @@ class Header extends Component {
     }
 }
 
-
 Header.propTypes = {}
-export default Header
+export default withTranslation()(Header)

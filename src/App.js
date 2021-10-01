@@ -14,6 +14,7 @@ import Delivery from './pages/Delivery';
 import OrderHistroy from './pages/OrderHistroy';
 import Wishlist from './pages/Wishlist';
 import Account from './pages/Account';
+import Multilingual from './pages/Multilingual';
 /**
 * @author
 * @class App
@@ -41,6 +42,7 @@ class App extends Component {
         <Route path="/delivery" component={ Delivery }></Route>
         <Route path="/order_history" component={ OrderHistroy }></Route>
         <Route path="/wishlist" component={ Wishlist }></Route>
+        <Route path="/multilingualtest" component={ Multilingual }></Route>
       </Router>
     )
   }
