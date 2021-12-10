@@ -25,10 +25,10 @@
 <h3>For Bank Transfer/Wire</h3>
 <div>BANK NAME    :  <strong>CORPORATION BANK</strong></div> 
 <div>BANK ADDRESS :  <strong>Plot No. B 49, Near Kamal Chowk,Tagore Marg, Neemuch 458441 INDIA</strong></div> 
-<div>ACCOUNT NAME :  <strong>DOLLOR INFOTECH</strong></div>
+<div>ACCOUNT NAME :  <strong>M/S DOLLOR INFOTECH</strong></div>
 <div>ACCOUNT TYPE :  <strong>CURRENT</strong></div> 
 <div>ACCOUNT NO   :  <strong>510101007218549</strong></div>
-<div>IFSC CODE    :  <strong>CORP0001065</strong></div>
+<div>IFSC CODE    :  <strong>UBIN0910651</strong></div>
 <div>SWIFT CODE   :  <strong>UBININBBSYI</strong></div>
 <br>
 <a href="https://www.youtube.com/playlist?list=PL_kVwOdi-YKRr_CsbcYVv08GE5zAa5TQW" target="_blank">Visit Video Tutorial</a>
